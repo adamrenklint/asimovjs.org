@@ -19,7 +19,11 @@ Same goes for styles declared using one line in the templates. And all files and
 A few great template helpers out of the box, and a simple structure to create your own.
 
 
-
+Introduction
+  basic concepts
+    one server app, many client apps
+    middleware and initializers
+    files and folders
 Getting started
   install...
   create project...
@@ -58,6 +62,8 @@ Multiple languages
 Middleware
   how to create your own
   how to override or extend existing
+Initializers
+  how to add your own
 Guides and examples
   Express session authentication + client login app
   Passwordless authentication using email and token link

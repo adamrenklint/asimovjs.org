@@ -1,6 +1,7 @@
 {
   "name": "asimovjs.com",
   "version": "1.0.0",
+  "homepage": "http://asimovjs.com",
   "description": "Website and documentation for ▲ asimov.js",
   "author": "Adam Renklint <adam@renklint.com>",
   "main": "main.js",
@@ -11,7 +12,11 @@
   "bugs": {
     "url": "https://github.com/adamrenklint/asimov-website/issues"
   },
+  "engines": {
+    "node": "~0.10.0",
+    "npm": "~1.1.60"
+  },
   "dependencies": {
-    "asimov-framework": "0.9.8"
+    "asimov-framework": "latest"
   }
 }
