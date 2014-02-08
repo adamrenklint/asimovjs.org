@@ -1,0 +1,17 @@
+{
+  "name": "asimovjs.com",
+  "version": "1.0.0",
+  "description": "Website and documentation for ▲ asimov.js",
+  "author": "Adam Renklint <adam@renklint.com>",
+  "main": "main.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/adamrenklint/asimov-website.git"
+  },
+  "bugs": {
+    "url": "https://github.com/adamrenklint/asimov-website/issues"
+  },
+  "dependencies": {
+    "asimov-framework": "0.9.8"
+  }
+}

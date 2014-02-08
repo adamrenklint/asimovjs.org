@@ -1,0 +1,79 @@
+@import "colors.styl"
+
+*
+  margin: 0
+  padding: 0
+
+body
+  background-color: $lightest
+  font-family: "Helvetica Neue","Helvetica","Arial",Sans-Serif
+  color: $dark
+  line-height: 1.4
+
+.sidebar
+  background: $lighter
+  position: fixed
+  top: 0
+  left: 0
+  bottom: 0
+  width: 230px
+  overflow-y: auto
+  overflow-x: hidden
+  -webkit-overflow-scrolling: touch
+  padding: 40px 0 30px 30px
+  border-right: 1px solid #bbb
+
+  li
+    margin-bottom: 5px
+
+  .sidebar-footer
+    position: absolute
+    bottom: 20px
+    opacity: 0.6
+
+a
+  color: $dark
+  text-decoration: none
+  font-weight: bold
+
+  &:hover
+    color: $darker
+
+li
+  &.active
+    a
+    a:hover
+      color: $accent
+
+.content
+  margin: 35px 70px 35px 300px
+  max-width: 700px
+
+  h1
+    margin-bottom: 30px
+    font-size: 40px
+
+h1
+  font-size: 26px
+  color: $darker
+
+ul
+  margin-left: 15px
+
+.menu
+  list-style: none
+  margin-top: 40px
+  margin-left: 0
+
+.logo
+  &.active
+    h1
+      color: $accent
+
+  h2
+    font-size: 16px
+    margin-top: 15px
+    color: $darker
+
+p
+  margin-bottom: 10px

@@ -1,0 +1,64 @@
+Title: A simple web framework for awesome websites and apps
+---
+Text:
+
+▲ asimov.js mainly offers three things: a simple structure and workflow for creating content, a client side single page app framework with lots of convention and shortcuts, and a backend that takes care of mapping dependencies, generating minified resources and serving requests.
+asdasdasdasdasdasd
+asasdsadas
+
+### The TLDR
+
+Creating content is based on files and folders. Create a file with your content and other data, and it's filename will define what template will be used to render it.
+
+International? Nemas problemas! Asimov supports localization out of the box, by simply creating more content and data files. {{link "/guides-and-examples/localization" "Read more..."}}
+
+Single page applications, powered by Asimov's frontend framework, can be embedded on any page with one line, and will automatically be compiled to a minified bundle.
+
+Same goes for styles declared using one line in the templates. And all files and their dependencies are observed for changes, and recompiled if needed.
+
+A few great template helpers out of the box, and a simple structure to create your own.
+
+
+
+Getting started
+  install...
+  create project...
+  launch server...
+The server and you
+  Order of loading
+  Logging
+  Watching folders and recompiling
+Adding content
+  Ordering = {n}-
+  Hidden folders = _
+Formatting Text
+  markdown, handlebars, yaml
+Adding media
+  Media in content folders
+  Media in site folder
+Templates
+  Partials
+  Variables
+    page, site
+Helpers
+  available both in templates and content files
+  how to create your own helper?
+  how to use helper from npm?
+  what data and utilities are available in a helper?
+  > browser/addons/helpers
+Embedding applications
+  application
+Include stylesheets
+  style
+Multiple languages
+  defaultLangCode = 'en'
+  No langCode used on default langCode
+  just add more content files
+  new urls will be available with the rendered content
+Middleware
+  how to create your own
+  how to override or extend existing
+Guides and examples
+  Express session authentication + client login app
+  Passwordless authentication using email and token link
+  Menus, the active state and children

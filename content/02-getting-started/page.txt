@@ -1,0 +1,8 @@
+title: Getting started
+---
+text:
+
+install dependencies
+install asimov
+create project
+run dev server

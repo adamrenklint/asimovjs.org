@@ -1,0 +1,6 @@
+title: Concepts and structure
+---
+text:
+
+one server app, multiple client apps
+multiple, re-usable client modules
