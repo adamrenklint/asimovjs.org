@@ -7,6 +7,7 @@
 // Have any quick and dirty options? Set them here
 var options = {};
 options.baseDir = __dirname;
+// options.logVerbose = true;
 // options.frameworkDir = 'asimov-framework';
 options.meta = require('./package.json');
 
