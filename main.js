@@ -11,4 +11,5 @@ options.baseDir = __dirname;
 options.meta = require('./package.json');
 
 // And then we start the beast
-var asimov = require('./' + options.frameworkDir +  '/main')(options);
+// var asimov = require('./' + options.frameworkDir +  '/main')(options);
+var asimov = require('asimov-framework')(options);
