@@ -1,0 +1,25 @@
+title: The bootstrap
+---
+text:
+
+Once you start the server application using <code>node main.js</code>, there's a bunch of things that happens. In <code>main.js</code> you have the chance to pass in options to the bootstrap, and change the behavior of some or all components.
+
+## The bootstrap process
+
+After playing a pretty intro animation, the crawler scans <code>options.paths.content</code> for all <code>.txt</code> files and create a map of the available urls. This map is passed to the render queueu, and to the server to be used by the cache router, and the web server is started and can start handling requests.
+
+Templates and template helpers are then loaded and validated, and the render queue starts processing jobs, saving its output to the cache. As application bundles and stylesheets are included in the rendered pages, they are also added to the render queue.
+
+## The flow of a request
+
+When the server receives a request, it first passes through a set of server middleware, then any middleware you have added, then some more framework middleware, and if the request has not been taken care of by then, a 404 is returned.
+
+When a request for a url that should be cached is received, it's passed on to the cache instance that tries to find the resource. If it or any of its dependencies are in queue to be rendered, they get pushed to the front of the queue and the requests are served as soon as rendering is complete.
+
+## Logging
+
+Logging happens on three levels: verbose, default and silent. Set <code>options.logVerbose</code> to <code>true</code> in <code>main.js</code> to see everything. Set <code>options.logSilent</code> to <code>true</code> to mute all logging except for critical system messages, and of course errors.
+
+## Disable intro animation
+
+In case you want to shave of a second or two from the startup time, you can disable the intro animation by setting <code>options.animateIntro</code> to <false> in <code>main.js</code>.
