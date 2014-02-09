@@ -1,7 +1,7 @@
 {
-  "name": "asimovjs.com",
+  "name": "asimovjs.org",
   "version": "1.0.0",
-  "homepage": "http://asimovjs.com",
+  "homepage": "http://asimovjs.org",
   "description": "Website and documentation for ▲ asimov.js",
   "author": "Adam Renklint <adam@renklint.com>",
   "main": "main.js",
@@ -17,6 +17,7 @@
     "npm": "~1.1.60"
   },
   "dependencies": {
-    "asimov-framework": "latest"
+    "asimov-framework": "latest",
+    "asimov-core": "0.0.5"
   }
 }
