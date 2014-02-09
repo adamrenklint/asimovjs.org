@@ -1,0 +1,7 @@
+title: Initializers
+---
+text:
+
+what are initializers, and why use them?
+how to add your own
+examples of usecases: crawl source code and generate a docs structure in /content, for a doc generator app.

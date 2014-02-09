@@ -1,0 +1,8 @@
+title: Multiple languages
+---
+text:
+
+defaultLangCode = 'en'
+No langCode used on default langCode
+just add more content files
+new urls will be available with the rendered content

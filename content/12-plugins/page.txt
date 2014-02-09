@@ -1,0 +1,5 @@
+title: Plugins
+---
+text:
+
+A plugin is a folder containing one or more templates, stylesheets, application bundles, pages, initializers and middleware

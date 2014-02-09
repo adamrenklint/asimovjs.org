@@ -1,0 +1,9 @@
+title: Middleware
+---
+text:
+
+what is middleware, why do you use it, and when is it triggered
+how to create your own
+how to override or extend existing
+what middleware is loaded by the framework
+define in content file what middleware to use

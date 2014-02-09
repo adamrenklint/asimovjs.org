@@ -1,0 +1,11 @@
+title: Content
+---
+text:
+
+Files and folders
+Ordering = {n}-
+Hidden folders = _
+Formatting Text
+  markdown, handlebars, yaml
+Media in content folders
+Media in site folder

@@ -1,70 +1,13 @@
 Title: A simple web framework for awesome websites and apps
 ---
-Text:
+text:
 
 ▲ asimov.js mainly offers three things: a simple structure and workflow for creating content, a client side single page app framework with lots of convention and shortcuts, and a backend that takes care of mapping dependencies, generating minified resources and serving requests.
-asdasdasdasdasdasd
-asasdsadas
 
-### The TLDR
+###It is actually as simple as that.
 
-Creating content is based on files and folders. Create a file with your content and other data, and it's filename will define what template will be used to render it.
+An ▲ asimov.js application has several different types of components, each with its clear purpose. When the app bootstrap <code>main.js</code> is executed, the **server application** starts. You add content by creating **folders and textfiles**, and use handlebars **templates** together with template **helpers** to render pages. Client side **application bundles** are automatically compressed, included on the page and served to the browser, same goes for stylus **stylesheets**. Create custom server **initializers** and **middleware** to change the backends behavior.
 
-International? Nemas problemas! Asimov supports localization out of the box, by simply creating more content and data files. {{link "/guides-and-examples/localization" "Read more..."}}
-
-Single page applications, powered by Asimov's frontend framework, can be embedded on any page with one line, and will automatically be compiled to a minified bundle.
-
-Same goes for styles declared using one line in the templates. And all files and their dependencies are observed for changes, and recompiled if needed.
-
-A few great template helpers out of the box, and a simple structure to create your own.
-
-
-Introduction
-  basic concepts
-    one server app, many client apps
-    middleware and initializers
-    files and folders
-Getting started
-  install...
-  create project...
-  launch server...
-The server and you
-  Order of loading
-  Logging
-  Watching folders and recompiling
-Adding content
-  Ordering = {n}-
-  Hidden folders = _
-Formatting Text
-  markdown, handlebars, yaml
-Adding media
-  Media in content folders
-  Media in site folder
-Templates
-  Partials
-  Variables
-    page, site
-Helpers
-  available both in templates and content files
-  how to create your own helper?
-  how to use helper from npm?
-  what data and utilities are available in a helper?
-  > browser/addons/helpers
-Embedding applications
-  application
-Include stylesheets
-  style
-Multiple languages
-  defaultLangCode = 'en'
-  No langCode used on default langCode
-  just add more content files
-  new urls will be available with the rendered content
-Middleware
-  how to create your own
-  how to override or extend existing
-Initializers
-  how to add your own
-Guides and examples
-  Express session authentication + client login app
-  Passwordless authentication using email and token link
-  Menus, the active state and children
+what problem does asimov solve for you?
+how does it solve it?
+how is that different from other solutions?

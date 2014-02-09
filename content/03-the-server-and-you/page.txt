@@ -1,0 +1,12 @@
+title: The server and you
+---
+text:
+
+one server app, multiple client apps
+multiple, re-usable client modules
+
+Order of loading
+Logging and verbose logging
+Disable intro animation
+Watching folders and recompiling
+benchmarking built into logging

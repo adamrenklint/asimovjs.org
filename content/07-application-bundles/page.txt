@@ -1,0 +1,14 @@
+title: Application bundles
+---
+text:
+
+embedding application bundles, application helper
+one or many applications on a page
+automatic reload
+
+components of an app
+what is available for free from the framework
+links to app examples?
+
+maybe this page needs to be fleshed out to several pages,
+don't want to be skipping on the docs for this very important part!!!
