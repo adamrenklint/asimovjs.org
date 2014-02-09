@@ -4,8 +4,6 @@ text:
 
 Once you start the server application using <code>node main.js</code>, there's a bunch of things that happens. In <code>main.js</code> you have the chance to pass in options to the bootstrap, and change the behavior of some or all components.
 
-## The bootstrap process
-
 After playing a pretty intro animation, the crawler scans <code>options.paths.content</code> for all <code>.txt</code> files and create a map of the available urls. This map is passed to the render queueu, and to the server to be used by the cache router, and the web server is started and can start handling requests.
 
 Templates and template helpers are then loaded and validated, and the render queue starts processing jobs, saving its output to the cache. As application bundles and stylesheets are included in the rendered pages, they are also added to the render queue.
