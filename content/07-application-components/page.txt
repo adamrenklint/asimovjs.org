@@ -1,0 +1,8 @@
+title: Application components
+---
+text:
+
+what types, how are they used?
+how to creat your own, extend others?
+
+read about sharing your components in the plugin section

@@ -1,0 +1,22 @@
+title: Getting started
+---
+text:
+
+## Install the command line interface
+
+First, make sure you have node.js and npm installed. Then, run this in the terminal to install the command line interface.
+
+    $ npm install -g asimov-cli
+
+## Create a new project and install dependencies
+
+Creating a new project literally takes one second.
+
+    $ asimov create exampleProject
+    $ cd exampleProject
+    $ npm install
+
+## Launch server application
+  
+    $ node main.js
+    $ open http://localhost:3003
