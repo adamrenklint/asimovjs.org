@@ -2,22 +2,50 @@ title: Content
 ---
 text:
 
-To create pages that are accessible to your visitors, create a folder in the <code>options.paths.content</code> path. The name of the folder will be the url of the page. In the folder, create a text file called page.txt. This file will contain the data for the page, and the name of the file defines which template will be used to render it.
+To create pages that are accessible to your visitors, create a folder called <code>my-first-post</code> in the <code>options.paths.content</code> path. The name of the folder will be the url of the page. In the folder, create a text file called <code>post.txt</code>. This file will contain the data for the page, and the name of the file defines which template will be used to render it.
+
+In this case, the template <code>post.tmpl</code> found in <code>options.paths.templates</code> will be rendered with the data from <code>post.txt</code> and made available at the url <code>/my-first-post</code>.
 
 ## Structure of a content page
 
-## Formatting content
+A content page is just a text file with sections of data, separated by three dashes. Each section has a key, followed by a colon, and the value of the key.
+
+    title: My very first post
+    ---
+    tags: blog, awesome
+    ---
+    text:
+    Lorem ipsum, all that good stuff...
+
+## Content section formats
+
+### Lists
+
+A comma separated list, like the tags list in the example above, is turned into an array that is available inside templates as <code>page.tags</code> when rendering.
 
 ### Markdown
 
-### Yaml
+Just use {{link "https://daringfireball.net/projects/markdown" "Markdown" target="_blank"}} syntax in a content section, and it will be rendered as markdown.
+
+### YAML
+
+Define nested data structures without breaking a sweat, using {{link "http://en.wikipedia.org/wiki/YAML" "YAML"}}, and iterate over the data in your templates and template helpers.
+
+    title: Downloads
+    ---
+    stores:
+      appstore: http://www.appstore.com
+      chromewebstore: http://www.chromewebstore.com
 
 ### Handlebars
 
+Speaking of templates - every content section will be scanned for {{link "http://handlebarsjs.com/" "Handlebars"}} syntax, then compiled and rendered as a template. This means you can use any template helper that is available in the project from within the content file.
+
 ## Adding media
 
-Media in content folders
-Media in site folder
+To add and use an image on one page, simply add it in the page's folder and use the template helper to include the image element. For example, load the image <code>1.png</code> by adding <code>&#123;&#123;image "1.png"&#125;&#125;</code> to the content file or the template used to render the content file.
+
+A lot of times, several pages will need to share images. Put these resources in <code>site/images</code> and use them the same way as above, using only the filename - paths are automatically resolved.
 
 ## Order of pages
 

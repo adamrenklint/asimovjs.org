@@ -6,7 +6,10 @@ embedding application bundles, application helper
 one or many applications on a page
 automatic reload
 
-components of an app
+## Elements of a frontend application bundle
+
+Application, Router, AppView, common classes and components
+
 what is available for free from the framework
 links to app examples?
 
