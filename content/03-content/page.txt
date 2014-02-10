@@ -2,10 +2,27 @@ title: Content
 ---
 text:
 
-Files and folders
-Ordering = {n}-
-Hidden folders = _
-Formatting Text
-  markdown, handlebars, yaml
+To create pages that are accessible to your visitors, create a folder in the <code>options.paths.content</code> path. The name of the folder will be the url of the page. In the folder, create a text file called page.txt. This file will contain the data for the page, and the name of the file defines which template will be used to render it.
+
+## Structure of a content page
+
+## Formatting content
+
+### Markdown
+
+### Yaml
+
+### Handlebars
+
+## Adding media
+
 Media in content folders
 Media in site folder
+
+## Order of pages
+
+To make certain a specific order for some or all children of a path in menus and similar, simply prepend the folder name with a number and a dash. <code>/my-page</code> becomes <code>/01-my-page</code>. The number can be used for positioning, but is stripped from the public url, which remains <code>/my-page</code>.
+
+## Hidden urls
+
+Any folder name that starts with an underscore, for example <code>/_private-stuff</code>, defines a hidden folder and any request to this folder or any of its children will be blocked.

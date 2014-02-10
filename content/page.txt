@@ -2,7 +2,7 @@ Title: A simple web framework for awesome websites and apps
 ---
 text:
 
-▲ asimov.js mainly offers three things: a simple structure and workflow for creating content, a client side single page app framework with lots of convention and shortcuts, and a backend that takes care of mapping dependencies, generating minified resources and serving requests.
+**▲ asimov.js has three areas of expertise**: providing a simple structure and workflow for creating content, a robust client side single page app framework with lots of smart conventions and shortcuts without adding too much magic, and a backend that takes care of mapping dependencies, watching for changes, generating minified resources and serving requests.
 
 ## It is actually as simple as that.
 
