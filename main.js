@@ -8,7 +8,7 @@
 var options = {};
 options.baseDir = __dirname;
 // options.logVerbose = true;
-// options.frameworkDir = 'asimov-framework';
+// options.frameworkDir = '../asimov-framework';
 options.meta = require('./package.json');
 
 // And then we start the beast
