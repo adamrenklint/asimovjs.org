@@ -17,6 +17,6 @@
     "npm": "~1.1.60"
   },
   "dependencies": {
-    "asimov-framework": "latest"
+    "asimov-framework": "~0.9.18"
   }
 }
