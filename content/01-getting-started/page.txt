@@ -2,6 +2,8 @@ title: Getting started
 ---
 text:
 
+First off, congratulations to a great decision in installing asimov.js! Getting your own project up and running is only a few minutes away.
+
 ## Install the command line interface
 
 First, make sure you have node.js and npm installed. Then, run this in the terminal to install the command line interface.
