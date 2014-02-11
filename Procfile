@@ -1,1 +1,1 @@
-web: ENV=productio node main.js
+web: ENV=production node main.js

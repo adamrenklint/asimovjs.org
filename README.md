@@ -1,7 +1,7 @@
 asimov-website
 ==============
 
-Website and documentation for ▲ asimov.js
+Website and documentation for asimov.js
 
 ## Getting started
 

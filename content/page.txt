@@ -2,11 +2,11 @@ Title: A simple web framework for awesome websites and apps
 ---
 text:
 
-**▲ asimov.js has three areas of expertise**: providing a simple structure and workflow for creating content, a robust client side single page app framework with lots of smart conventions and shortcuts without adding too much magic, and a backend that takes care of mapping dependencies, watching for changes, generating minified resources and serving requests.
+**asimov.js has three areas of expertise**: providing a simple structure and workflow for creating content, a robust client side single page app framework with lots of smart conventions and shortcuts without adding too much magic, and a backend that takes care of mapping dependencies, watching for changes, generating minified resources and serving requests.
 
 ## It is actually as simple as that.
 
-An ▲ asimov.js application has several different types of components, each with its clear purpose. When the app bootstrap <code>main.js</code> is executed, the **server application** starts. You add content by creating **folders and textfiles**, and use handlebars **templates** together with template **helpers** to render pages. Client side **application bundles** are automatically compressed, included on the page and served to the browser, same goes for stylus **stylesheets**. Create custom server **initializers** and **middleware** to change the backends behavior.
+An asimov.js application has several different types of components, each with its clear purpose. When the app bootstrap <code>main.js</code> is executed, the **server application** starts. You add content by creating **folders and textfiles**, and use handlebars **templates** together with template **helpers** to render pages. Client side **application bundles** are automatically compressed, included on the page and served to the browser, same goes for stylus **stylesheets**. Create custom server **initializers** and **middleware** to change the backends behavior.
 
 what problem does asimov solve for you?
 how does it solve it?
