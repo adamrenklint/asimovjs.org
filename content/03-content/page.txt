@@ -2,9 +2,9 @@ title: Content
 ---
 text:
 
-To create pages that are accessible to your visitors, create a folder called <code>my-first-post</code> in the <code>options.paths.content</code> path. The name of the folder will be the url of the page. In the folder, create a text file called <code>post.txt</code>. This file will contain the data for the page, and the name of the file defines which template will be used to render it.
+To create pages that are accessible to your visitors, create a folder called <code>my-first-post</code> in the existing <code>content</code> folder. The name of the folder will be the url of the page. In the folder, create a text file called <code>post.txt</code>. This file will contain the data for the page, and the name of the file defines which template will be used to render it.
 
-In this case, the template <code>post.tmpl</code> found in <code>options.paths.templates</code> will be rendered with the data from <code>post.txt</code> and made available at the url <code>/my-first-post</code>.
+In this case, the template <code>post.tmpl</code> found in <code>site/templates</code> will be rendered with the data from <code>post.txt</code> and made available at the url <code>/my-first-post</code>.
 
 ## Structure of a content page
 
@@ -18,6 +18,10 @@ A content page is just a text file with sections of data, separated by three das
     Lorem ipsum, all that good stuff...
 
 ## Content section formats
+
+### Text
+
+This one is pretty obvious, right?
 
 ### Lists
 

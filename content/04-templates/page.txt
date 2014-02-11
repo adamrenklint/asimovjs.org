@@ -1,7 +1,22 @@
+&#123;&#125;
 title: Templates
 ---
 text:
 
-Partials
-Variables
-  page, site
+Page templates are based on {{link "http://handlebarsjs.com/" "Handlebars"}}, a popular and fast template language. Add your templates to <code>site/templates</code>, and use it by giving the content textfile the same name. The page <code>content/home.txt</code> would be rendered using <code>site/templates/home.tmpl</code>
+
+## Partials
+
+Every template in <code>site/templates</code> is also available as a partial  inside every other template. This means that breaking down complex layouts into small, simple and re-usable units is easy, and keeps developers sane when the pages starts growing.
+
+To include <code>site/templates/header.tmpl</code> as a partial in your template, simply use <code>&#123;&#123;>header&#125;&#125;</code>. The data context will be passed to the partial template automatically.
+
+## Data
+
+Inside the template you have access to a few important pieces of data. Using the <code>site</code> keyword in the template, you find the contents of your content textfile. Get the page title using <code>&#123;&#123;page.title&#125;&#125;</code>, the text content by using <code>&#123;&#123;page.text&#125;&#125;</code>, and so on.
+
+In the folder <code>site/data</code> you can save textfiles in the same format as content files, and they will be available in your template under the <code>site</code> keyword. Use <code>&#123;&#123;site.company.email&#125;&#125;</code> to get the value of the key <code>email</code> in <code>site/data/company.txt</code>.
+
+## Inception
+
+You can also use template syntax in your content and data textfiles, where the same data that is passed to the template is available. This means you could easily include the page's title throughout the page textfile instead of repeating it by using <code>&#123;&#123;page.title&#125;&#125;</code>.

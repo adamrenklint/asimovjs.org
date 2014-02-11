@@ -2,8 +2,76 @@ title: Helpers
 ---
 text:
 
-available both in templates and content files
-how to create your own helper?
-how to use helper from npm?
-what data and utilities are available in a helper?
-> browser/addons/helpers
+Anywhere you can use template syntax, meaning templates, content textfiles and data textfiles, you also have access to template helpers. These come in two different flavours - the kind that simply takes some values and returns some html, and the kind where you pass an inner template that is rendered with whatever data the helper passes it.
+
+## Available helpers
+
+asimov.js ships with a few built in template helpers:
+
+### Active
+Conditional helper. Pass a value and a url, and the value will be rendered if the url is active. For example <code>&#123;&#123;active "/" "home-sweet-home"&#125;&#125;</code>.
+
+### Application
+Inserts client application bootstrap and enqueues source for bundling. For example <code>&#123;&#123;application "login"&#125;&#125;</code> to load <code>public/applications/login/Application.js</code>.
+
+### Children
+Iterate over the children of the current page, and render the inner template with each child as context. For example <code>&lt;ul&gt;&#123;&#123;#children&#125;&#125;&lt;li&gt;&#123;&#123;this.url&#125;&#125;&lt;/li&gt;&lt;/ul&gt;</code>.
+
+### Email
+Convenience helper for adding a mailto link. For example <code>&#123;&#123;email "adam@renklint.com" "send me an email" subject="asimov.js is great"&#125;&#125;</code>.
+
+### Image
+Convenience helper for adding an image. For example <code>&#123;&#123;image "logo.png"&#125;&#125;</code>.
+
+### JSON
+Pass an object and it will be stringified and rendred.
+
+### Link
+Convenience helper for adding a link. For example <code>&#123;&#123;link "http://www.asimovjs.org" "asimov.js"&#125;&#125;</code>.
+
+### Style
+Inserts a style tag, and enqueues the stylesheet to rendered and cached. For example <code>&#123;&#123;style "responsive"&#125;&#125;</code> will load and compile <code>site/styles/responsive.styl</code>.
+
+## Define your own helpers
+
+If you need custom functionality in your templates, you can easily create your own helpers. Create a new file in <code>site/helpers</code> and implement the helper <code>run()</code> callback.
+
+For example, this is the code for the <code>&#123;&#123;image&#125;&#125;</code> template helper:
+
+    define([
+
+      'TemplateHelper'
+
+    ], function (TemplateHelper) {
+
+      return TemplateHelper.extend({
+
+        'run': function (src) {
+
+          var self = this;
+          var options = self.opts(arguments);
+          var hash = options.hash;
+
+          hash.src = typeof src === 'string' ? src : hash.src;
+          hash.src = self.currentUrl + '/' + hash.src;
+
+          hash.selfClose = true;
+
+          return self.html('img', hash);
+        }
+      });
+    });
+
+There's a couple of things going one here. First, notice how we're extracting <code>options</code> with a helper. This is to support passing <code>src</code> in <code>hash</code> instead of the first argument.
+
+When constructing <code>hash.src</code> we use <code>self.currentUrl</code>, which is of course the url of the page currently being rendered.
+
+At the end of our helper, we return the value of the internal <code>html()</code> helper. It takes the tagName as first argument, and an object to be used as attributes in the returned html string.
+
+## Utilities and data
+
+* <code>helper.currentUrl</code> the url of the page being rendered
+* <code>helper.currentPage</code> the data object representing the page being rendered
+* <code>helper.map</code> collection of all public pages, indexed by url
+* <code>helper.opts(arguments)</code> normalizes the function arguments
+* <code>helper.html(tagName, attributes)</code> conveniently create a html string

@@ -14,8 +14,8 @@ First, make sure you have node.js and npm installed. Then, run this in the termi
 
 Creating a new project literally takes one second.
 
-    $ asimov create exampleProject
-    $ cd exampleProject
+    $ asimov create myAwesomeProject
+    $ cd myAwesomeProject
     $ npm install
 
 ## Launch server application
