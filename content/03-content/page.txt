@@ -4,8 +4,6 @@ text:
 
 The public content is defined by folders and textfiles in the <code>content</code> folder.
 
-{{image "site/asdf.png"}}
-
 For example, to create a page at the url <code>/my-first-page</code>, first create the folder <code>content/my-first-page</code>. In this folder, create a textfile called <code>page.txt</code>. This file will contain the data for the page, and the name of the file defines which template will be used to render it.
 
 In this case, the template <code>page.tmpl</code> found in <code>site/templates</code> will be rendered with the data from <code>page.txt</code> and made available at the url <code>/my-first-page</code>.
@@ -65,8 +63,14 @@ Any folder name that starts with an underscore, for example <code>/_private-stuf
 
 ## Inheritance (WIP)
 
-Sometimes, a set of pages need share the same properties, or new page might even be considered an extension of an existing page. Recursive inheritance with deeply merged properties can be enabled with one line in your content text file, defining the page node to inherit from.
+Sometimes, a set of pages need share the same properties, or new page might even be considered an extension of an existing page. Recursive inheritance with deeply merged properties can be enabled with one line in your content text file, defining the url of the page node to inherit from.
 
     ...
     inherits: /blog/first-post
     ...
+
+If you want to inherit from a language other than the default one, just add the language code to the url. For example <code>inherits: /blog/first-post/de<code>.
+
+If you have a partially translated page, you can let it inherit from the default language page to fill in the blanks.
+
+And remember, the <code>inherits</code> content section is just like any other, meaning you can use template syntax to use page variables, like the url or title, to define what path to inherit from.
