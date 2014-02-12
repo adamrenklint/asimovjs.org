@@ -4,6 +4,8 @@ text:
 
 As we've said before, at the heart of asimov.js is a simple express server. To extend or change the behavior of the request flow, you can add custom middleware.
 
+{{image "asdf.png"}}
+
 ## The request middleware flow
 
 When a request comes in to the server, it first passes through the InvisibleUrl middleware that protects all folders with a name that starts with underscore. After that, the LanguageRedirector ensures that the default languageCode is not present in the url, and redirects if necessary to ensure a single url per page.

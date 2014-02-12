@@ -4,6 +4,8 @@ text:
 
 The public content is defined by folders and textfiles in the <code>content</code> folder.
 
+{{image "site/asdf.png"}}
+
 For example, to create a page at the url <code>/my-first-page</code>, first create the folder <code>content/my-first-page</code>. In this folder, create a textfile called <code>page.txt</code>. This file will contain the data for the page, and the name of the file defines which template will be used to render it.
 
 In this case, the template <code>page.tmpl</code> found in <code>site/templates</code> will be rendered with the data from <code>page.txt</code> and made available at the url <code>/my-first-page</code>.
