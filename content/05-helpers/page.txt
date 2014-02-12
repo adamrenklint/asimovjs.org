@@ -2,7 +2,9 @@ title: Helpers
 ---
 text:
 
-Anywhere you can use template syntax, meaning templates, content textfiles and data textfiles, you also have access to template helpers. These come in two different flavours - the kind that simply takes some values and returns some html, and the kind where you pass an inner template that is rendered with whatever data the helper passes it.
+Where you can use template syntax, i.e. templates, content textfiles and data textfiles, you also have access to template helpers, allowing you to create more complex, re-usable rendering logic.
+
+Helpers come in two different flavours - the kind that simply takes some values and returns some html, and the kind where you pass an inner template that is rendered with whatever data the helper passes to it.
 
 ## Available helpers
 
@@ -15,7 +17,7 @@ Conditional helper. Pass a value and a url, and the value will be rendered if th
 Inserts client application bootstrap and enqueues source for bundling. For example <code>&#123;&#123;application "login"&#125;&#125;</code> to load <code>public/applications/login/Application.js</code>.
 
 ### Children
-Iterate over the children of the current page, and render the inner template with each child as context. For example <code>&lt;ul&gt;&#123;&#123;#children&#125;&#125;&lt;li&gt;&#123;&#123;this.url&#125;&#125;&lt;/li&gt;&lt;/ul&gt;</code>.
+Iterate over the children of the current page, and render the inner template with each child as context. For example <code>&lt;ul&gt;&#123;&#123;#children&#125;&#125;&lt;li&gt;&#123;&#123;this.url&#125;&#125;&lt;/li&gt;&#123;&#123;/children&#125;&#125;&lt;/ul&gt;</code>.
 
 ### Email
 Convenience helper for adding a mailto link. For example <code>&#123;&#123;email "adam@renklint.com" "send me an email" subject="asimov.js is great"&#125;&#125;</code>.
@@ -34,13 +36,13 @@ Inserts a style tag, and enqueues the stylesheet to rendered and cached. For exa
 
 ## Define your own helpers
 
-If you need custom functionality in your templates, you can easily create your own helpers. Create a new file in <code>site/helpers</code> and implement the helper <code>run()</code> callback.
+If you need custom functionality in your templates, you can easily create your own helpers. Create a new file in <code>site/helpers</code> and implement the <code>helper.run()</code> method.
 
 For example, this is the code for the <code>&#123;&#123;image&#125;&#125;</code> template helper:
 
     define([
 
-      'TemplateHelper'
+      'asimov/TemplateHelper'
 
     ], function (TemplateHelper) {
 
@@ -62,7 +64,7 @@ For example, this is the code for the <code>&#123;&#123;image&#125;&#125;</code>
       });
     });
 
-There's a couple of things going one here. First, notice how we're extracting <code>options</code> with a helper. This is to support passing <code>src</code> in <code>hash</code> instead of the first argument.
+There's a couple of things going on here. First, notice how we're extracting <code>options</code> with the <code>opts(arguments)</code> helper method. This is to support passing <code>hash.src</code> both in <code>hash</code> and as the first argument.
 
 When constructing <code>hash.src</code> we use <code>self.currentUrl</code>, which is of course the url of the page currently being rendered.
 

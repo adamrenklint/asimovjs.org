@@ -2,8 +2,70 @@ title: Middleware
 ---
 text:
 
-what is middleware, why do you use it, and when is it triggered
-how to create your own
-how to override or extend existing
-what middleware is loaded by the framework
-define in content file what middleware to use
+As we've said before, at the heart of asimov.js is a simple express server. To extend or change the behavior of the request flow, you can add custom middleware.
+
+## The request middleware flow
+
+When a request comes in to the server, it first passes through the InvisibleUrl middleware that protects all folders with a name that starts with underscore. After that, the LanguageRedirector ensures that the default languageCode is not present in the url, and redirects if necessary to ensure a single url per page.
+
+The request is then passed to the chain of whatever custom middleware you define in you content textfile.
+
+The CacheRouter and DirectoryRouter manages access to resources that should be cached and resources that are allowed be accessed on the filesystem. If a response has not been sent after this, the NotFound middleware will return a 404.
+
+## Implement custom middleware
+
+To extend or modify the request flow, you can add your custom middleware in the <code>site/middleware</code> folder. A Middleware class must implement a <code>handle(req, res, next)</code> method, or an error is thrown.
+
+Consider this example, the code from the frameworks LanguageRedirector used in the beginning of the request flow. Pretty simple - if the url starts with the default language code, redirect to the same url without the language code.
+
+    define([
+
+      'asimov/Middleware'
+
+    ], function (Middleware) {
+
+      return Middleware.extend({
+
+        'handle': function (req, res, next) {
+
+          var self = this;
+          var langCode = self.options.localization.defaultLangCode;
+
+          if (req.url.indexOf('/' + langCode + '/') === 0) {
+            return res.redirect(req.url.replace('/' + langCode, ''));
+          }
+
+          next();
+        }
+      });
+    });
+
+Remember, if you don't send a response in your handler or call <code>next()</code>, the request will hang on and time out.
+
+## Define global middleware
+
+Edit the <code>middleware</code> array in <code>environments/common.json</code>.
+
+    {
+      "middleware": [
+        "bannedIps"
+      ]
+    }
+
+## Define environment middleware
+
+For example, edit the <code>middleware</code> array in <code>environments/staging.json</code>.
+
+    {
+      "middleware": [
+        "basicAuth"
+      ]
+    }
+
+## Define page middleware
+
+In this example, the url <code>/secret</code> should only be available if the user is authenticated and not a bot. Simply edit the <code>middleware</code> content section in <code>content/secret/page.txt</code>.
+
+    ---
+    middleware: NotABot, Authenticated
+    ---

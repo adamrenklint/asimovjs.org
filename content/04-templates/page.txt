@@ -7,7 +7,7 @@ Page templates are based on {{link "http://handlebarsjs.com/" "Handlebars"}}, a 
 
 ## Partials
 
-Every template in <code>site/templates</code> is also available as a partial  inside every other template. This means that breaking down complex layouts into small, simple and re-usable units is easy, and keeps developers sane when the pages starts growing.
+Every template in <code>site/templates</code> is also available as a partial  inside every other template. This means that breaking down complex layouts into small, simple and re-usable units is easy, and keeps developers sane even when projects scale up.
 
 To include <code>site/templates/header.tmpl</code> as a partial in your template, simply use <code>&#123;&#123;>header&#125;&#125;</code>. The data context will be passed to the partial template automatically.
 
