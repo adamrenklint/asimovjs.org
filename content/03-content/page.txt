@@ -60,3 +60,11 @@ To ensure a specific order when iterating over the children of a url, simply pre
 ## Hidden urls (WIP)
 
 Any folder name that starts with an underscore, for example <code>/_private-stuff</code>, defines a hidden folder and any request to this folder or any of its children will be blocked.
+
+## Inheritance (WIP)
+
+Sometimes, a set of pages need share the same properties, or new page might even be considered an extension of an existing page. Recursive inheritance with deeply merged properties can be enabled with one line in your content text file, defining the page node to inherit from.
+
+    ...
+    inherits: /blog/first-post
+    ...
