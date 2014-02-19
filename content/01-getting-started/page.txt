@@ -24,4 +24,4 @@ Creating a new project literally takes one second.
 
 ## Launch and open in your default browser
 
-    $ asimov open
+    $ asimov open asd

@@ -1,0 +1,7 @@
+title: ich bin deutsch
+---
+text:
+
+and heres johnny:
+
+{{super.text}}
