@@ -6,6 +6,13 @@ text:
 
 ## It is actually as simple as that.
 
+## Three principles of asimov.js
+
+- Content should be simple to create, powerful to master, and in the best formats possible
+- The client
+- The server
+
+
 An asimov.js application has several different types of components, each with its clear purpose. When the app bootstrap <code>main.js</code> is executed, the **server application** starts. You add content by creating **folders and textfiles**, and use handlebars **templates** together with template **helpers** to render pages. Client side **application bundles** are automatically compressed, included on the page and served to the browser, same goes for stylus **stylesheets**. Create custom server **initializers** and **middleware** to change the backends behavior.
 
 what problem does asimov solve for you?
