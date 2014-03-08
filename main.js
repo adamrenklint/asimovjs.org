@@ -12,5 +12,4 @@ options.animateIntro = false;
 options.meta = require('./package.json');
 
 // And then we start the beast
-// var asimov = require('./../asimov/main')(options);
-var asimov = require('asimov')(options);
+var asimov = require('asimov.js')(options);

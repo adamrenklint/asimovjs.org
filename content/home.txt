@@ -1,0 +1,7 @@
+title: asimov.js - a better way to build awesome websites and apps
+---
+headline: ▲ asimov.js
+---
+text:
+
+A better way to build awesome websites and apps. Coming soon.

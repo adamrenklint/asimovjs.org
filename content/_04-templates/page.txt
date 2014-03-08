@@ -1,4 +1,3 @@
-&#123;&#125;
 title: Templates
 ---
 text:

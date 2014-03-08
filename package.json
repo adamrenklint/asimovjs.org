@@ -1,6 +1,6 @@
 {
   "name": "asimovjs.org",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "homepage": "http://asimovjs.org",
   "description": "Website and documentation for asimov.js",
   "author": "Adam Renklint <adam@renklint.com>",
@@ -17,6 +17,6 @@
     "npm": "~1.1.60"
   },
   "dependencies": {
-    "asimov": "~0.9.6"
+    "asimov.js": "latest"
   }
 }
