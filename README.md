@@ -1,6 +1,8 @@
 asimovjs.org
 ============
 
+[![Build Status](https://travis-ci.org/adamrenklint/asimovjs.org.png?branch=master)](https://travis-ci.org/adamrenklint/asimovjs.org)
+
 Website and documentation for asimov.js
 
 ## Getting started
