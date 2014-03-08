@@ -4,8 +4,8 @@ headline: Three rules of {{#link "/"}}<strong>asimov</strong>.js{{/link}}
 ---
 text:
 
-- I will create content in a semantic structure (folders and textfiles) using simple and expressive syntax (YAML, Markdown, Handlebars) and compose pages from inherited and original resources.
+- I will create content in a <strong>semantic structure)</strong> (folders and textfiles using simple and <strong>expressive syntax</strong> (YAML, Markdown, Handlebars) and <strong>compose pages</strong> from inherited and original resources.
 
-- I will write my application in small chunks, composed of single purposed modules, powered by an extensive server and client side framework.
+- I will write my rich frontend clients in <strong>small chunks</strong>, assembled by <strong>multiple sandboxed applications</strong> and <strong>isolated single purpose modules</strong>, powered by an extensive framework of utilities.
 
-- I can extend and alter the behavior of every aspect and event of the asimov process, using custom initializers and request middleware, themes and plugins.
+- I can extend and alter the behavior of every aspect and event of the asimov process, using environment configurations, custom initializers and request middleware, themes and plugins.
