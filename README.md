@@ -3,13 +3,11 @@ asimovjs.org
 
 Website and documentation for asimov.js
 
-
 ## Getting started
 
-    $ git clone https://github.com/adamrenklint/asimovjs.org
-    $ cd asimovjs.org && make install
-    $ make start
-    $ open http://localhost:3003
+You need to have node and npm installed. Then fork this repo and open it in your terminal.
+
+    $ make install && make open
 
 ## Run tests
 
