@@ -12,8 +12,15 @@ body
   color: $dark
   line-height: 1.5
   font-size: 1.6em
+
+.container
   margin: 100px auto
-  max-width: 600px
+  max-width: 720px
+
+  .content
+    &.smaller
+      max-width: 600px
+      margin: 0 auto
 
   @media screen and (max-width: 600px)
     margin 40px
@@ -30,6 +37,8 @@ p
   margin-bottom: 20px
 
 .logo
+.logo a
+.logo a:active
   margin-top 15%
   margin-bottom 5%
   font-size 60px
@@ -42,12 +51,14 @@ p
   @media screen and (max-width: 600px)
     font-size 40px
 
+ul
+  list-style: none
+
 .footer
+  margin-top: 60px
+  border-top: 1px solid $dark
+  padding-top: 30px
   font-size: 1em
-  position: fixed
-  bottom: 20px
-  left: 0
-  right: 0
 
 pre
 code
