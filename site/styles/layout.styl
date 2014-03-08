@@ -1,4 +1,5 @@
 @import "colors.styl"
+@import url("http://fonts.googleapis.com/css?family=Signika:400,600,700")
 
 *
   margin: 0
@@ -7,9 +8,10 @@
 body
   text-align: center
   background-color: $lighter
-  font-family: "Helvetica Neue","Helvetica","Arial",Sans-Serif
+  font-family: "Signika", "Helvetica Neue", "Helvetica", "Arial", Sans-Serif
   color: $dark
-  line-height: 1.4
+  ine-height: 1.5
+  font-size: 1.5em
   margin: 100px
 
   @media screen and (max-width: 600px)
@@ -18,24 +20,26 @@ body
 a
   color: $dark
   text-decoration: none
-  font-weight: bold
+  font-weight: 600
 
   &:hover
     color: $darker
 
-h1
+.logo
   margin-top 15%
   margin-bottom 5%
   font-size 60px
+  font-weight 300
   color $accent
+
+  .name
+    font-weight: 700
 
   @media screen and (max-width: 600px)
     font-size 40px
 
-.content
-  font-size: 1.4em
-
 .footer
+  font-size: 1em
   position: fixed
   bottom: 20px
   left: 0
