@@ -4,8 +4,8 @@ headline: Three rules of {{#link "/"}}<strong>asimov</strong>.js{{/link}}
 ---
 text:
 
-- I will create content in a <strong>semantic structure</strong> (folders and textfiles using simple and <strong>expressive syntax</strong> (YAML, Markdown, Handlebars) and <strong>compose pages</strong> from inherited and original resources.
+- We create <strong>dynamic, rich content</strong> using a <strong>semantic structure</strong> (folders and textfiles) together with <strong>simple and expressive syntax</strong> (YAML, Markdown, Handlebars).
 
-- I will write my rich frontend clients in <strong>small chunks</strong>, assembled by <strong>multiple sandboxed applications</strong> and <strong>isolated single purpose modules</strong>, powered by an extensive framework of utilities.
+- We write frontend clients in <strong>small chunks</strong>, assembled by multiple <strong>sandboxed applications</strong> and <strong>isolated single purpose modules</strong>, powered by an extensive MVVC framwork.
 
-- I will <strong>extend and alter</strong> the smart default behavior of every aspect and event of the asimov.js process, using environment configurations, <strong>custom initializers</strong> and <strong>request middleware</strong>, custom for your project or <strong>bundled in themes and plugins</strong>.
+- We will <strong>extend and alter</strong> the smart default behaviors of every aspect and lifecycle event of the asimov.js process, using <strong>environment configurations</strong>, <strong>custom initializers</strong>, <strong>request middleware</strong>, bundled in <strong>themes</strong> and <strong>plugins</strong>.
