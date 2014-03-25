@@ -6,3 +6,5 @@ defaultLangCode = 'en'
 No langCode used on default langCode
 just add more content files
 new urls will be available with the rendered content
+
+## maybe cut this one up into a subsection of /content?

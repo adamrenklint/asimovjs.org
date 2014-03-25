@@ -19,23 +19,35 @@ A content page is just a text file with sections of data, separated by three das
     text:
     Lorem ipsum, all that good stuff...
 
-## Content section formats
+## Syntax and format
 
 ### Text
+
+    ---
+    title: My awesome title!
+    ---
 
 This one is pretty obvious, right?
 
 ### Lists
 
+    ---
+    tags: blog, awesome
+    ---
+
 A comma separated list, like the tags list in the example above, is turned into an array that is available inside templates as <code>page.tags</code> when rendering.
 
 ### Markdown
 
+    ---
+    text:
+    ## Subheadline
+    - First item
+    ---
+
 Just use {{link "https://daringfireball.net/projects/markdown" "Markdown" target="_blank"}} syntax in a content section, and it will be rendered as markdown.
 
 ### YAML
-
-Define nested data structures without breaking a sweat, using {{link "http://en.wikipedia.org/wiki/YAML" "YAML"}}, and iterate over the data in your templates and template helpers.
 
     title: Downloads
     ---
@@ -43,7 +55,13 @@ Define nested data structures without breaking a sweat, using {{link "http://en.
       appstore: http://www.appstore.com
       chromewebstore: http://www.chromewebstore.com
 
+Define nested data structures without breaking a sweat, using {{link "http://en.wikipedia.org/wiki/YAML" "YAML"}}, and iterate over the data in your templates and template helpers.
+
 ### Handlebars
+
+    ---
+    title: The url is {{page.url}}
+    ---
 
 Speaking of templates - every content section will be scanned for {{link "http://handlebarsjs.com/" "Handlebars"}} syntax, then compiled and rendered as a template. This means you can use any template helper that is available in the project from within the content file.
 

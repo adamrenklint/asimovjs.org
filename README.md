@@ -9,11 +9,15 @@ Website and documentation for asimov.js
 
 You need to have node and npm installed. Then fork this repo and open it in your terminal.
 
-    $ make install && make open
+    $ make install && make start
+
+## Run in verbose (debug) mode
+
+    $ make debug
 
 ## Run tests
 
-    $ make test
+    $ make install-dev && make test
 
 ## Publish to Heroku
 

@@ -2,6 +2,9 @@ title: The server application
 ---
 text:
 
+## TODO: change this to "the queue and the server": simplify, and describe only the essentials of both...
+## cut almost everything here, mostly bullshit and not relevant for the average user, yet
+
 At the heart of asimov.js is a simple express server with some smart middleware hooked into it. By adding your own custom initializers and request middleware, you can extend the server modify the entire flow of rendering and caching.
 
 ## Bootstrap

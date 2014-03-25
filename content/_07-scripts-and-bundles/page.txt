@@ -1,6 +1,17 @@
-title: Application bundles (WIP)
+title: Scripts and bundles (WIP)
 ---
 text:
+
+{{script name}}
+
+{{bundle name}}
+{{bundle name data}}
+{{bundle name data key="value"}}
+
+choice of what to use or how to build your frontend application is free and up to you. it's a design goal for asimov.js to offer a port of the robust client framework that powers wunderlist.com, in a future version.
+
+
+# old
 
 embedding application bundles, application helper
 one or many applications on a page
