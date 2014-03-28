@@ -1,3 +1,29 @@
 title: asimov.js - docs
 ---
-text: A better way to build awesome websites and apps, based on {{link "/three-rules" "three rules"}}. Coming soon.
+headline: Documenation
+---
+text:
+
+First off, congratulations to a great decision in installing asimov.js! Getting your own project up and running is only a few minutes away.
+
+### Install the command line interface
+
+First, make sure you have node.js and npm installed. Then, run this in the terminal to install the command line interface.
+
+    $ npm install -g asimov-cli
+
+### Create a new project and install dependencies
+
+Creating a new project literally takes one second.
+
+    $ asimov create myAwesomeProject
+    $ cd myAwesomeProject
+    $ npm install
+
+### Launch server application
+
+    $ asimov
+
+### Launch and open in your default browser
+
+    $ asimov open asd

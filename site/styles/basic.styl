@@ -47,11 +47,37 @@ a
 .center
   text-align: center
 
+.clearfix:after
+  content: "."
+  display: block
+  clear: both
+  visibility: hidden
+  line-height: 0
+  height: 0
+
+.clearfix
+  display: inline-block
+
+html[xmlns] .clearfix
+  display: block
+
+* html .clearfix
+  height: 1%;
+
 // TYPOGRAPHY
 
 p
-  margin-bottom: 20px
+  margin-bottom: 15px
   font-weight: 300
+
+// CODE
+pre
+  padding: 10px 20px
+  background: rgba(black,0.05)
+  font-family: 'Source Code Pro'
+  font-size: 1.1em
+  margin: 10px 0 30px
+  border-radius: 4px
 
 
 // BUTTONS
