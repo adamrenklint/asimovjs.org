@@ -1,6 +1,23 @@
 {{import "header"}}
+{{style "home"}}
 
-<h1 class="logo"><span class="title"><span class="name">asimov</span>.js</span></h1>
-  <div class="content smaller">{{text}}</div>
+<div class="wrapper">
+  <h1 class="logo">
+    <span class="title"><span class="name">asimov</span>.js</span>
+  </h1>
+  <p class="content smaller">{{text}}</p>
+  <div class="terminal">
+    <div class="header"></div>
+    <div class="terminalContent">
+      <p>$ asimov create myAwesomeProject</p>
+      <p>$ cd myAwesomeProject</p>
+      <p>$ npm install</p>
+    </div>
+  </div>
+  <div class="callToActions">
+    <a class="button outline">Get Started</a>
+    <a class="button">Docs</a>
+  </div>
+</div>
 
 {{import "footer"}}

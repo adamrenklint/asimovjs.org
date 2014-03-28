@@ -1,0 +1,47 @@
+.wrapper
+  width: 620px
+  margin: 70px auto 0
+
+  h1
+    margin-bottom: 30px
+
+  p
+    font-size: 1.625em
+    line-height: @font-size + 5%
+
+  .terminal
+    width: 445px
+    height: 320px
+    background: white
+    box-shadow: inset 0 0 0 1px #e8e8e8, 0 1px 3px rgba(black,0.054)
+    border-radius: 7px
+    margin: 40px auto
+    position: relative
+
+    &:after
+      content: ''
+      position: absolute
+      bottom: 0
+      left: 0
+      width: 100%
+      height: 50%
+
+    .header
+      width: 100%
+      box-sizing: border-box
+      padding: 20px 0
+      border-bottom: 1px solid #e8e8e8
+
+    .terminalContent
+      font-family: 'Source Code Pro'
+      text-align: left
+      padding: 10px 20px
+
+      p
+        font-size: 1.063em
+        margin-bottom: 8px
+        color: $darker
+
+  .callToActions
+    a
+      margin: 0 10px
