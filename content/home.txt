@@ -2,4 +2,5 @@ title: asimov.js - a better way to build awesome websites and apps
 ---
 text:
 
-A better way to build awesome websites and apps, based on {{link "/three-rules" "three rules"}}. Coming soon.
+A better way to build awesome websites
+and apps, based on files and folders.
