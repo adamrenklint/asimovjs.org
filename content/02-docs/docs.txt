@@ -1,0 +1,3 @@
+title: asimov.js - docs
+---
+text: A better way to build awesome websites and apps, based on {{link "/three-rules" "three rules"}}. Coming soon.

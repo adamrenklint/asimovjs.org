@@ -1,9 +1,8 @@
 {{import "header"}}
-{{style "home"}}
 
-<div class="wrapper">
+<div class="wrapper center">
   <h1 class="logo">
-    <span class="title"><span class="name">asimov</span>.js</span>
+    <strong>asimov</strong>.js
   </h1>
   <p class="content smaller">{{text}}</p>
   <div class="terminal">
@@ -14,10 +13,8 @@
       <p>$ npm install</p>
     </div>
   </div>
-  <div class="callToActions">
-    <a class="button outline">Get Started</a>
-    <a class="button">Docs</a>
-  </div>
+  {{import "calltoaction"}}
 </div>
 
 {{import "footer"}}
+
