@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.2.5
+
+  - **Released Saturday March 29th, 2014 @ 6pm**
+  - Use default framework favicon
+
 ## 0.2.4
 
   - Fix tweet being too long, was including "via @adamrenklint"
