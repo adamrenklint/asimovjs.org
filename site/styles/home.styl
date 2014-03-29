@@ -78,6 +78,17 @@
       box-sizing: border-box
       padding: 15px 0
       border-bottom: 1px solid #e8e8e8
+      position: relative
+
+      &:before
+        content:''
+        position: absolute
+        top: 0
+        left: 0
+        height: 5px
+        width: 19px
+        background: url('site/images/windowcontrols.svg') no-repeat center center
+        background-size: 100%
 
     .terminalContent
       font-family: 'Source Code Pro'
