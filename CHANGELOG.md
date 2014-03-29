@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.2.4
+
+  - Fix tweet being too long, was including "via @adamrenklint"
+  - Fixed line-height and tweet button z-index
+
 ## 0.2.3
 
   - New tagline: "A better way to build awesome websites and apps, with javascript and common sense"
