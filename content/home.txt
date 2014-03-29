@@ -1,4 +1,4 @@
-title: asimov.js - a better way to build awesome websites and apps
+title: asimov.js - a better way to build awesome websites and apps, with javascript and common sense
 ---
 text:
 
