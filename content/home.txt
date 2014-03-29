@@ -3,4 +3,4 @@ title: asimov.js - a better way to build awesome websites and apps
 text:
 
 A better way to build awesome websites
-and apps, based on files and folders.
+and apps, with javascript and common sense.
