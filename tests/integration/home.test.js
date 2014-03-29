@@ -15,7 +15,6 @@ test(function (test) {
       expect(this.browser.text('H1')).to.contain('asimov.js');
     });
 
-    test.itShould.containLinkTo('/three-rules');
     test.itShould.containLinkTo('adamrenklint.com');
   });
 });
