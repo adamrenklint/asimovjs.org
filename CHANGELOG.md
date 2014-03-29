@@ -2,7 +2,7 @@
 
 ## 0.2.1
 
-  - Fixed tweet button url
+  - Fixed tweet button always showing 0, was using wrong url
 
 ## 0.2.0
 
