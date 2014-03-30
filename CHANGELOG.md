@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.2.7
+
+  - **Released Sundary March 40th, 2014 @ 10.36pm**
+  - Use asimov.js 0.14.2
+
+## 0.2.6
+
+  - **Released Sundary March 40th, 2014 @ 10.30pm**
+  - Use asimov.js 0.14.0
+
 ## 0.2.5
 
   - **Released Saturday March 29th, 2014 @ 6pm**
