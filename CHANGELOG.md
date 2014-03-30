@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.2.8
+
+  - **Released Sundary March 40th, 2014 @ 10.55pm**
+  - Use asimov.js 0.14.3, fixes test loading issue
+
 ## 0.2.7
 
   - **Released Sundary March 40th, 2014 @ 10.36pm**

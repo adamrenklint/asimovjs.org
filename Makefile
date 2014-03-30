@@ -1,11 +1,6 @@
 install:
 	@echo "\n[make] Installing project dependencies...\n";
-	@npm install --quiet
-
-install-dev:
-	@echo "\n[make] Installing development dependencies...\n"
 	@npm install --quiet && npm install --quiet -g mocha
-	@cd node_modules/asimov.js && npm install --quiet
 
 start:
 	@node main.js
