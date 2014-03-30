@@ -12,7 +12,7 @@ git:
   submodules: false
 
 install:
-  - make install-dev
+  - make install
 
 script:
   - make test
