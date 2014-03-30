@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.2.9 - 0.2.13
+
+  - **Released Sundary March 40th, 2014 @ 11.30pm**
+  - Debugged Heroku server crashing, turns out to be a bug in asimov.js
+  - Use asimov.js 0.14.5, fixes Heroku port issue
+
 ## 0.2.8
 
   - **Released Sundary March 40th, 2014 @ 10.55pm**
