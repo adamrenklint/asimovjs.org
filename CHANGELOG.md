@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.2.14
+
+  - **Released Monday March 31th, 2014 @ 1.20am**
+  - Added MIT license
+
 ## 0.2.9 - 0.2.13
 
   - **Released Sunday March 40th, 2014 @ 11.30pm**
