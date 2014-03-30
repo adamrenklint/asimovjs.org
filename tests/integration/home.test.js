@@ -1,4 +1,6 @@
-test(function (test) {
+var Test = require('asimov.js').Test;
+
+Test.run('integration/home', function (test) {
 
   var instance;
 
