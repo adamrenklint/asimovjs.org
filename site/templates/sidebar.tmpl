@@ -1,7 +1,11 @@
 <div class="sidebar">
   <ul class="sidebar-container">
     {{#children "/docs"}}
-      <li>{{link this.url this.title}}</li>
+
+      <li {{#active this.url}}class="active"{{/active}}>
+        {{link this.url this.title}}
+      </li>
+
     {{/children}}
   </ul>
 </div>
