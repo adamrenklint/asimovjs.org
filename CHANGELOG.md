@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.2.15
+
+  - **Released Saturday April 5th, 2014 @ 5pm**
+  - Upgraded to asimov.js 0.15.2
+
 ## 0.2.14
 
   - **Released Monday March 31th, 2014 @ 1.20am**
