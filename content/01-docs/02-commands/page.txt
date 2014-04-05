@@ -1,0 +1,7 @@
+title: Commands
+---
+text:
+
+What is a command?
+Available commands
+Adding custom commands

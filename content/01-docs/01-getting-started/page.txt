@@ -1,5 +1,15 @@
-title: Getting started
+title: Getting Started
 ---
 text:
 
-alksdlsadjas
+tag intro bla bla, asimov is ...
+Pages and urls = files and folders
+Templates and Helpers
+Stylesheets and Scripts
+Initializers and Middleware
+
+## Install and create a new project
+
+Install command line interface
+Create a new project
+Start and open

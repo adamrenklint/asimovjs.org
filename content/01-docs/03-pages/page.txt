@@ -1,0 +1,10 @@
+title: Pages
+---
+text:
+
+Files and folders
+Content sections
+Import data from other pages
+Multiple languages, auto-inherits, how urls work
+Page redirects
+Page aliases
