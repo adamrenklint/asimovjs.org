@@ -4,6 +4,7 @@ text:
 
 How to write templates
 How to use helpers
+Importing other templates, passing data
 Available helpers
 How to add custom helpers
 What data and utils are available inside helpers

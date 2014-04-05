@@ -8,6 +8,6 @@ If you are totally new to asimov.js, start with {{link "/docs/getting-started" "
 
 If you want to keep up to date with all the new stuff in every version of asimov.js, keep checking out the {{link "/docs/changelog" "changelog"}} and {{link "/blog" "blog"}}.
 
-A successful project needs good and focused documentation. If you have any feedback or critique, please {{email "adam@renklint.com" title="reach out"}}.
+A successful tool and open source project needs good and focused documentation. If you have any feedback or critique, please {{email "adam@renklint.com" title="reach out"}}.
 
 If you are a developer and looking to contribute, {{link "https://github.com/adamrenklint/asimov.js" "fork the repo"}}.
