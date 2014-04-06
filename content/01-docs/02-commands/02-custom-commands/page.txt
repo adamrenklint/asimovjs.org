@@ -55,7 +55,7 @@ Next, we need to write a method that recursively walks the folders and adds up t
 }
 ```
 
-To set it all off, we walk to start path and execute the counter method we just added, at the end of the initializer.
+To set it all off, we walk the start path and execute the counter method we just added, at the end of the initializer.
 
 ```
 filesystem.readDirectory(startPath, self.countLines);
@@ -76,4 +76,4 @@ $ ajs linecount
 > Counted a total of 34 line(s) +0.002s
 ```
 
-Great, it works! Now go on to command the universe.
+Great, it works! Now go on to command the universe. And if you end up making something that might be useful to others, [submit a pull request](https://github.com/adamrenklint/asimov.js).

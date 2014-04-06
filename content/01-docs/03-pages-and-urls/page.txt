@@ -1,14 +1,71 @@
 title: Pages and Urls
 ---
+ignoreHandlebars: true
+---
 text:
 
-Files and folders
-Content sections
-Import data from other pages
+Pages are simple textfiles, saved in the <code>/content</code> folder. Their urls are defined by the folder structure, and the name of the textfile defines what template is used to render it.
+
+## Format of a page textfile
+
+A page textfile consist of **content sections**, divided by dashes, defining a key and some sort of value.
+
+```
+title: My awesome page!
+%divider%
+tags: epic, legendary
+%divider%
+text: Hello world!
+```
+
+### Plain text
+
+The *title* section above is an example of a plain text content section, which will be available as a string in templates.
+
+### List (array of strings)
+
+The *tag* section will be parsed as an array of strings.
+
+### Markdown
+
+Pretty obvious, this one. [The one and only Markdown](https://daringfireball.net/projects/markdown/syntax).
+
+### Handlebars
+
+Using Handlebars syntax, you can include another value from the page textfile.
+
+    {{asda}}
+templates + helpers
+learn more about... > link
+
+### YAML
+
+Use nested data structures to avoid repetition.
+
+```
+title: A page of links
+%divider%
+links:
+  adamrenklint:
+    type: developer
+    url: http://adamrenklint.com
+%divider%
+text: Visit the %cl%link links.adamrenklint.url links.adamrenklint.type%cr%
+```
+
+### HTML
+
+Yeah, you read it. Good ol' HTML also works in page textfiles, to allow for truely flexible, page specific designs and layouts.
+
+## > Available variables (self, super)
+## > Import data from other pages
+
+incepted variables
+Available in all js classes as self.options.pages
 Multiple languages, auto-inherits, how urls work
 Page redirects
 Page aliases
 Hidden and ignored pages
 Ordering pages
 
-Variables available here and in templates (page, pages, site)
+Variables available here and in templates (and helpers) (page, pages, site)

@@ -12,6 +12,6 @@ If you want to keep up to date with all the new stuff in every version of asimov
 
 Every reliable tool and successful open source project needs good, clear documentation. If you have any feedback or critique, please {{email "adam@renklint.com" title="reach out"}}.
 
-If you are a developer and looking to contribute, {{link "https://github.com/adamrenklint/asimov.js" "fork the repo"}}.
+If you are a developer and looking to contribute, {{link "https://github.com/adamrenklint/asimov.js" "fork the repo"}} and submit a pull request.
 
 asimov.js is a {{link "https://github.com/adamrenklint/asimov.js/blob/master/LICENSE" "MIT licensed"}} open source project from {{link "http://adamrenklint.com" "Adam Renklint"}}, created in Berlin in the spring of 2014.
