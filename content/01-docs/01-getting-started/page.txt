@@ -13,4 +13,11 @@ These instructions will fork the default project template and give you a great s
 ## Create and start a new project
 
     $ ajs create myAwesomeProject
+    $ cd myAwesomeProject
     $ ajs start
+
+## Check out this short tutorial
+
+    [short tutorial video]
+    - show steps above
+    - create a new page with a custom template and stylesheet

@@ -1,8 +1,10 @@
-title: Documentation for {{frameworkversion}}
+title: Documentation for version {{frameworkversion}}
+---
+hidechildren: true
 ---
 text:
 
-Welcome, young padawan. Here you will learn the basics of what asimov.js is and does, how to interact with all the moving parts, and how to bend and extend the lifecycle events of your app.
+Welcome, young padawan. Here you will learn the basics of what asimov.js is and does, how to interact with all the moving parts, and how to bend and extend the lifecycle events of your app for more advanced use cases.
 
 If you are totally new to asimov.js, start with {{link "/docs/getting-started" "the basics"}}.
 
@@ -11,3 +13,5 @@ If you want to keep up to date with all the new stuff in every version of asimov
 A successful tool and open source project needs good and focused documentation. If you have any feedback or critique, please {{email "adam@renklint.com" title="reach out"}}.
 
 If you are a developer and looking to contribute, {{link "https://github.com/adamrenklint/asimov.js" "fork the repo"}}.
+
+An {{link "https://github.com/adamrenklint/asimov.js/blob/master/LICENSE" "MIT licensed"}} open source project from {{link "http://adamrenklint.com" "Adam Renklint"}}, made in Berlin, spring of 2014.

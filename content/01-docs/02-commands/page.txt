@@ -2,6 +2,6 @@ title: Commands
 ---
 text:
 
-What is a command?
-Available commands
-Adding custom commands
+asimov.js comes with a command line interface, called <code>ajs</code>, that allows you to create projects, manage pages, run your tests and much more, from your terminal.
+
+Following the base principle of asimov.js, all core commands are built as plugins, and developers can easily add custom commands, or even overload existing ones.

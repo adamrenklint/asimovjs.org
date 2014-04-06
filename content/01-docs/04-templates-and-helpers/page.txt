@@ -7,4 +7,6 @@ How to use helpers
 Importing other templates, passing data
 Available helpers
 How to add custom helpers
+
 What data and utils are available inside helpers
+Variables available here and in templates (page, pages, site)

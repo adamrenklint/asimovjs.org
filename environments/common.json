@@ -3,6 +3,7 @@
     "RootDomain"
   ],
   "initializers": [
-    "Changelog"
+    "Changelog",
+    "PageSummary"
   ]
 }

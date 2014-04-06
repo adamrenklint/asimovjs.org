@@ -8,9 +8,20 @@
   <h1>{{title}}</h2>
   {{text}}
 
-  {{#if page.children}}
-    asd
-  {{/if}}
+  {{#unless page.hidechildren}}
+    {{#haschildren}}
+      <h2>Read more about {{page.title}}</h2>
+      <ul class="docs-children">
+        {{#children}}
+          <li>
+            <h3>{{link this.url this.title}}</h3>
+            {{this.summary}} {{link this.url "Read more..."}}
+          </li>
+        {{/children}}
+      </ul>
+    {{/haschildren}}
+  {{/unless}}
+
 </div>
 
 {{import "footer"}}

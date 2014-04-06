@@ -1,0 +1,5 @@
+title: Commands shipped with asimov.js
+---
+text:
+
+asimov.js comes with a few powerful, built-in commands, allowing you to run, test and manage your project and its pages directly from the command line.

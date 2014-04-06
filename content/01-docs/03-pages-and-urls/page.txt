@@ -1,4 +1,4 @@
-title: Pages
+title: Pages and Urls
 ---
 text:
 
@@ -10,3 +10,5 @@ Page redirects
 Page aliases
 Hidden and ignored pages
 Ordering pages
+
+Variables available here and in templates (page, pages, site)
