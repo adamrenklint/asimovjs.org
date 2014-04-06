@@ -34,9 +34,11 @@ Pretty obvious, this one. [The one and only Markdown](https://daringfireball.net
 
 Using Handlebars syntax, you can include another value from the page textfile.
 
-    {{asda}}
-templates + helpers
-learn more about... > link
+```
+title: Important title
+%divider%
+text: I repeat, it is a very %cl%title%cr%
+```
 
 ### YAML
 
@@ -56,16 +58,3 @@ text: Visit the %cl%link links.adamrenklint.url links.adamrenklint.type%cr%
 ### HTML
 
 Yeah, you read it. Good ol' HTML also works in page textfiles, to allow for truely flexible, page specific designs and layouts.
-
-## > Available variables (self, super)
-## > Import data from other pages
-
-incepted variables
-Available in all js classes as self.options.pages
-Multiple languages, auto-inherits, how urls work
-Page redirects
-Page aliases
-Hidden and ignored pages
-Ordering pages
-
-Variables available here and in templates (and helpers) (page, pages, site)
