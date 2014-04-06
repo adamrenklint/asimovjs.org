@@ -2,14 +2,15 @@ title: Getting Started
 ---
 text:
 
-tag intro bla bla, asimov is ...
-Pages and urls = files and folders
-Templates and Helpers
-Stylesheets and Scripts
-Initializers and Middleware
+So you've looked around, kicked the tires and you're now ready for a test run? Great, installing asimov.js and creating your new projects only takes a few seconds.
 
-## Install and create a new project
+These instructions will fork the default project template and give you a great starting point for your next website and app project.
 
-Install command line interface
-Create a new project
-Start and open
+## Install the command line interface
+
+    $ npm install -g asimov.js
+
+## Create and start a new project
+
+    $ ajs create myAwesomeProject
+    $ ajs start

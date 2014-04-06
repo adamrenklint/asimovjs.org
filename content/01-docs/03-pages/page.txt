@@ -8,3 +8,5 @@ Import data from other pages
 Multiple languages, auto-inherits, how urls work
 Page redirects
 Page aliases
+Hidden and ignored pages
+Ordering pages
