@@ -4,6 +4,10 @@
 
       <li {{#active this.url}}class="active"{{/active}}>
         {{link this.url this.title}}
+
+        <!-- Not possible to do until context is seamlessly passed to inner templates
+        {{#activeancestor page.url}}
+        {{/activeancestor}} -->
       </li>
 
     {{/children}}

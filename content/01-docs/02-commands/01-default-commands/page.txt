@@ -30,7 +30,13 @@ Create a blank stylesheet in <code>/site/styles</code>.
 
 ## ajs extend [parent] [path]
 
-Create subclass of <code>parent</code> in <code>path</code>. EXPLAIN MORE,
+Create subclass of <code>parent</code> in <code>path</code>. Finds parent class by searching for first match in the <code>/lib</code> folder.
+
+asimov.js also exposes a few base classes: Base, Initializer, Middleware and Helper.
+
+The extended class will by default be created in the same folder as the parent class, unless you define a folder path.
+
+For example: <code>ajs extend MyCustomClass newFolder/AwesomerClass</code> will create <code>AwesomerClass.js</code> in <code>/lib/newFolder</code>, regardless of where the parent is saved.
 
 ## ajs start
 
@@ -44,9 +50,11 @@ Start project with verbose logging. The <code>--open</code> flag also works here
 
 Run all tests in the <code>/tests</code> folder.
 
+To use any of mocha's built-in reporters, set the <code>-R</code> flag. For example, use <code>ajs test -R spec</code> to use the spec reporter.
+
 ## ajs test [grep]
 
-Run only the tests matching <code>grep</code>.
+Run only the tests matching <code>grep</code>. The <code>-R</code> flag of course also works here.
 
 ## ajs coverage
 
@@ -55,3 +63,5 @@ Generate a test coverage report using Istanbul. Pass the <code>--open</code> fla
 ## ajs publish
 
 Publish project to NPM and push git tag. Used by asimov.js internally to publish itself.
+
+To publish a beta version of your project ot NPM, use the <code>--beta</code> flag. This will make it installable to users with <code>npm install yourModule@beta</code>, but not be considered when doing a normal <code>npm install yourModule</code>.
