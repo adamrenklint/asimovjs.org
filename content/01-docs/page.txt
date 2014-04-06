@@ -10,8 +10,8 @@ If you are totally new to asimov.js, start with {{link "/docs/getting-started" "
 
 If you want to keep up to date with all the new stuff in every version of asimov.js, keep checking out the {{link "/docs/changelog" "changelog"}} and {{link "/blog" "blog"}}.
 
-A successful tool and open source project needs good and focused documentation. If you have any feedback or critique, please {{email "adam@renklint.com" title="reach out"}}.
+Every reliable tool and successful open source project needs good, clear documentation. If you have any feedback or critique, please {{email "adam@renklint.com" title="reach out"}}.
 
 If you are a developer and looking to contribute, {{link "https://github.com/adamrenklint/asimov.js" "fork the repo"}}.
 
-An {{link "https://github.com/adamrenklint/asimov.js/blob/master/LICENSE" "MIT licensed"}} open source project from {{link "http://adamrenklint.com" "Adam Renklint"}}, made in Berlin, spring of 2014.
+asimov.js is a {{link "https://github.com/adamrenklint/asimov.js/blob/master/LICENSE" "MIT licensed"}} open source project from {{link "http://adamrenklint.com" "Adam Renklint"}}, created in Berlin in the spring of 2014.

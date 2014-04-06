@@ -12,11 +12,13 @@ Show usage instructions, basically a shorter version of this page.
 
 ## ajs create [name]
 
-Create new project, in a new folder, called <code>[name]</code>, based on the [default project template](https://github.com/adamrenklint/asimovjs-template-project).
+Create a new project from the [default project template](https://github.com/adamrenklint/asimovjs-template-project).
 
 ## ajs new page [url] [template]
 
-Create a new page in the <code>/content</code> folder. For example, <code>ajs new page /blog/01-hello-world post</code> will create a new page in <code>/content/blog/01-hello-world/post.txt</code>.
+Create a new page in the <code>/content</code> folder.
+
+For example, <code>ajs new page /blog/01-hello-world post</code> will create a new page in <code>/content/blog/01-hello-world/post.txt</code>.
 
 ## ajs new template [name]
 
@@ -28,7 +30,7 @@ Create a blank stylesheet in <code>/site/styles</code>.
 
 ## ajs extend [parent] [path]
 
-Create subclass of <code>[parent]</code> in <code>[path]</code>. EXPLAIN MORE,
+Create subclass of <code>parent</code> in <code>path</code>. EXPLAIN MORE,
 
 ## ajs start
 
@@ -36,16 +38,20 @@ Start your asimov.js project, equivalent to running <code>node main.js</code>. O
 
 ## ajs debug
 
-Start project with verbose logging. <code>--open</code> flag also works here.
+Start project with verbose logging. The <code>--open</code> flag also works here.
+
+## ajs test
+
+Run all tests in the <code>/tests</code> folder.
 
 ## ajs test [grep]
 
-Run all tests in the <code>/tests</code> folder, or only the ones matching <code>[grep]</code>.
+Run only the tests matching <code>grep</code>.
 
 ## ajs coverage
 
-Generate a test coverage report using Istanbul.
+Generate a test coverage report using Istanbul. Pass the <code>--open</code> flag to open the report in your default browser.
 
 ## ajs publish
 
-Publish project to NPM and push git tag.
+Publish project to NPM and push git tag. Used by asimov.js internally to publish itself.
