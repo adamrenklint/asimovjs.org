@@ -10,12 +10,21 @@
 
   {{#unless page.hidechildren}}
     {{#haschildren}}
-      <h2>Read more about {{page.title}}</h2>
+      <!-- <h2>Read more about {{page.childheadline}}</h2> -->
       <ul class="docs-children">
         {{#children}}
           <li>
-            <h3>{{link this.url this.title}}</h3>
-            {{this.summary}} {{link this.url "Read more..."}}
+            <h2>
+              {{#unless this.nolink}}
+                {{link this.url this.title}}
+              {{/unless}}
+              {{#if this.nolink}}
+                {{this.title}}
+              {{/if}}
+            </h2>
+            {{#if this.summary}}
+              {{this.summary}} {{#unless this.nolink}}{{link this.url "Read more..."}}{{/unless}}
+            {{/if}}
           </li>
         {{/children}}
       </ul>

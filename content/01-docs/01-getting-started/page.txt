@@ -2,9 +2,10 @@ title: Getting Started
 ---
 text:
 
-So you've looked around, kicked the tires and you're now ready for a test run? Great, installing asimov.js and creating your new projects only takes a few seconds.
+So you've looked around, kicked the tires and you're now ready for a test run?
+Great, installing asimov.js and creating your new project only takes a few seconds.
 
-These instructions will fork the default project template and give you a great starting point for your next website and app project.
+These instructions will install asimov.js, copy the default project template and give you a great starting point for your next website or app.
 
 ## Install the command line interface
 

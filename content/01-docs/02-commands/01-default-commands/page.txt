@@ -1,0 +1,51 @@
+title: Using the default Commands
+---
+childheadline:
+---
+text:
+
+The <code>ajs</code> command line interface comes equiped with a few powerful default commands, allowing you to run, test and manage your entire project and it's pages - directly from your terminal window.
+
+## ajs help
+
+Show usage instructions, basically a shorter version of this page.
+
+## ajs create [name]
+
+Create new project, in a new folder, called <code>[name]</code>, based on the [default project template](https://github.com/adamrenklint/asimovjs-template-project).
+
+## ajs new page [url] [template]
+
+Create a new page in the <code>/content</code> folder. For example, <code>ajs new page /blog/01-hello-world post</code> will create a new page in <code>/content/blog/01-hello-world/post.txt</code>.
+
+## ajs new template [name]
+
+Create a blank template in <code>/site/templates</code>.
+
+## ajs new style [name]
+
+Create a blank stylesheet in <code>/site/styles</code>.
+
+## ajs extend [parent] [path]
+
+Create subclass of <code>[parent]</code> in <code>[path]</code>. EXPLAIN MORE,
+
+## ajs start
+
+Start your asimov.js project, equivalent to running <code>node main.js</code>. Optionally pass <code>--open</code> to open the project in your default browser.
+
+## ajs debug
+
+Start project with verbose logging. <code>--open</code> flag also works here.
+
+## ajs test [grep]
+
+Run all tests in the <code>/tests</code> folder, or only the ones matching <code>[grep]</code>.
+
+## ajs coverage
+
+Generate a test coverage report using Istanbul.
+
+## ajs publish
+
+Publish project to NPM and push git tag.
