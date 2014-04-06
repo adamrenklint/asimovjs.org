@@ -17,8 +17,8 @@ These instructions will install asimov.js, copy the default project template and
     $ cd myAwesomeProject
     $ ajs start
 
-## Check out this short tutorial
+## Learn how it works
 
-    [short tutorial video]
-    - show steps above
-    - create a new page with a custom template and stylesheet
+To learn more about what the CLI can do for you, check out {{link "/docs/commands" "Commands"}}.
+
+Or if you want to dive right into creating creating content and designing pages, start with {{link "/docs/pages-and-urls" "Pages and Urls"}} and follow with {{link "/docs/templates-and-helper" "Templates and Helpers"}}.
