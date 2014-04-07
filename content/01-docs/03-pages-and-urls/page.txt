@@ -32,7 +32,7 @@ Pretty obvious, this one. [The one and only Markdown](https://daringfireball.net
 
 ### Handlebars
 
-Using Handlebars syntax, you can include another value from the page textfile.
+Using Handlebar′s syntax, you can include another value from the page textfile.
 
 ```
 title: Important title
