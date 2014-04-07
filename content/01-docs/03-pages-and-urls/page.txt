@@ -57,4 +57,4 @@ text: Visit the %cl%link links.adamrenklint.url links.adamrenklint.type%cr%
 
 ### HTML
 
-Yeah, you read it. Good ol' HTML also works in page textfiles, to allow for truely flexible, page specific designs and layouts.
+Yeah, you read it. Good ol′ HTML also works in page text files, to allow for truly flexible, page specific designs and layouts.
