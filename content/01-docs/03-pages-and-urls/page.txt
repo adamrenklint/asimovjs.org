@@ -8,7 +8,7 @@ Pages are simple textfiles, saved in the <code>/content</code> folder. Their url
 
 ## Format of a page textfile
 
-A page textfile consist of **content sections**, divided by dashes, defining a key and some sort of value.
+A page textfile consists of **content sections**, divided by three dashes, defining a key and some sort of value.
 
 ```
 title: My awesome page!
