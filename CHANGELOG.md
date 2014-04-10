@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.2.16
+
+  - **Released Wednesday April 10th, 2014 @ 9.10pm**
+  - Fixed the terminal commands, was completely wrong
+  - Upgraded to asimov.js 0.15.5
+
 ## 0.2.15
 
   - **Released Saturday April 5th, 2014 @ 5pm**
