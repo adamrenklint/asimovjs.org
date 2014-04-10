@@ -1,8 +1,14 @@
 # Changelog
 
+## 0.2.17
+
+  - **Released Friday April 11th, 2014 @ 1am**
+  - Use new tagline
+  - Upgraded to asimov.js 0.16.0
+
 ## 0.2.16
 
-  - **Released Wednesday April 10th, 2014 @ 9.10pm**
+  - **Released Thursday April 10th, 2014 @ 9.10pm**
   - Fixed the terminal commands, was completely wrong
   - Upgraded to asimov.js 0.15.5
 

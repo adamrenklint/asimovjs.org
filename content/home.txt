@@ -1,6 +1,6 @@
-title: asimov.js - a better way to build awesome websites and apps, with javascript and common sense
+title: asimov.js - a better way to build awesome websites and apps, with javascript and textfiles
 ---
 text:
 
 A better way to build awesome websites
-and apps, with javascript and common sense.
+and apps, with javascript and textfiles.
