@@ -1,4 +1,4 @@
-title: Documentation for version {{frameworkversion}}
+title: Documentation for version {{ajs.version}}
 ---
 hidechildren: true
 ---

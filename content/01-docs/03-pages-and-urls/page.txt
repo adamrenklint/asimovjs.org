@@ -6,6 +6,8 @@ text:
 
 Pages are simple textfiles, saved in the <code>/content</code> folder. Their urls are defined by the folder structure, and the name of the textfile defines what template is used to render it.
 
+To create content, you use <a href="{{page.url}}/adding-content">expressive syntax</a>
+
 ## Format of a page textfile
 
 A page textfile consist of **content sections**, divided by dashes, defining a key and some sort of value.

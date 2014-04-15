@@ -9,7 +9,7 @@
   {{text}}
 
   {{#unless page.hidechildren}}
-    {{#haschildren}}
+    {{#if page.hasChildren}}
       <!-- <h2>Read more about {{page.childheadline}}</h2> -->
       <ul class="docs-children">
         {{#children}}
@@ -28,7 +28,7 @@
           </li>
         {{/children}}
       </ul>
-    {{/haschildren}}
+    {{/if}}
   {{/unless}}
 
 </div>

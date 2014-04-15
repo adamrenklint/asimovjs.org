@@ -20,6 +20,6 @@
     "npm": "~1.1.60"
   },
   "dependencies": {
-    "asimov.js": "0.17.1"
+    "asimov.js": "0.17.4"
   }
 }
