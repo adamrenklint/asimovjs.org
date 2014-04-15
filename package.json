@@ -5,7 +5,8 @@
   "description": "Website and documentation for asimov.js",
   "author": "Adam Renklint <adam@renklint.com> (http://adamrenklint.com)",
   "contributors": [
-    "Timothy Achumba <timothy@achumba.com> (http://awsme.me)"
+    "Timothy Achumba <timothy@achumba.com> (http://awsme.me)",
+    "Marvin Labod <marvin@6wunderkinder.com> (http://www.inlovewithcss.com)"
   ],
   "main": "main.js",
   "repository": {
