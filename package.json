@@ -23,5 +23,8 @@
   "dependencies": {
     "asimov.js": "0.17.5-beta1",
     "nib": "^1.0.2"
+  },
+  "scripts": {
+    "postinstall": "node main.js --preinstall"
   }
 }
