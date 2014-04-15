@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.2.19
+
+  - **Released Tuesday April 15th, 2014 @ 9.45am**
+  - Revert to deploy #55, current asimov.js is broken on Heroku
+
 ## 0.2.18
 
   - **Released Tuesday April 15th, 2014 @ 9.40am**
