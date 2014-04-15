@@ -10,7 +10,7 @@ To create content, you use <a href="{{page.url}}/adding-content">expressive synt
 
 ## Format of a page textfile
 
-A page textfile consist of **content sections**, divided by dashes, defining a key and some sort of value.
+A page textfile consists of **content sections**, divided by three dashes, defining a key and some sort of value.
 
 ```
 title: My awesome page!
@@ -34,7 +34,7 @@ Pretty obvious, this one. [The one and only Markdown](https://daringfireball.net
 
 ### Handlebars
 
-Using Handlebars syntax, you can include another value from the page textfile.
+Using the Handlebars syntax, you can include another value from the page textfile.
 
 ```
 title: Important title
@@ -59,4 +59,4 @@ text: Visit the %cl%link links.adamrenklint.url links.adamrenklint.type%cr%
 
 ### HTML
 
-Yeah, you read it. Good ol' HTML also works in page textfiles, to allow for truely flexible, page specific designs and layouts.
+Yeah, you read it. Good ol′ HTML also works in page text files, to allow for truly flexible, page specific designs and layouts.
