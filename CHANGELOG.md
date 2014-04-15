@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.2.18
+
+  - **Released Tuesday April 15th, 2014 @ 9.40am**
+  - Upgraded to asimov.js 0.17.4
+  - Styling improvements and typo fixes [#17](https://github.com/adamrenklint/asimovjs.org/pull/17)
+
 ## 0.2.17
 
   - **Released Friday April 11th, 2014 @ 1am**
