@@ -1,0 +1,6 @@
+title: Adding content
+---
+text:
+
+content sections
+blah blah blah

@@ -1,0 +1,24 @@
+title: Getting Started
+---
+text:
+
+So you’ve looked around, kicked the tires and you’re now ready for a test run?
+Great, installing asimov.js and creating your new project only takes a few seconds.
+
+These instructions will install asimov.js, copy the default project template and give you a great starting point for your next website or app.
+
+## Install the command line interface
+
+    $ npm install -g asimov.js
+
+## Create and start a new project
+
+    $ ajs create myAwesomeProject
+    $ cd myAwesomeProject
+    $ ajs start
+
+## Learn how it works
+
+To learn more about what the CLI can do for you, check out {{link "/docs/commands" "Commands"}}.
+
+Or if you want to dive right into creating creating content and designing pages, start with {{link "/docs/pages-and-urls" "Pages and Urls"}} and follow with {{link "/docs/templates-and-helper" "Templates and Helpers"}}.

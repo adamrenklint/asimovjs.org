@@ -1,0 +1,32 @@
+title: Visible, Hidden and Ignored Pages
+---
+text:
+
+Folder names comes in three flavours:
+
+```
+/01-blog
+  /01-hello-world
+  /02-another-post
+  /_draft
+/contact
+```
+
+Folders with numbers define **visible** pages, folders without numbers are **hidden** pages and if it's prefixed with an underscore, it's considered an **ignored** page.
+
+## Visible Pages
+
+Visible in menus and page collections
+Number is used for ordering
+Number is stripped from url
+
+## Hidden Pages
+
+Not visible in menus
+Only visible in page collections is explicitly set to show hidden
+Can still link to them, public urls
+
+## Ignored Pages
+
+Ignored when crawling filesystem, not rendered
+Secure way of saving drafts

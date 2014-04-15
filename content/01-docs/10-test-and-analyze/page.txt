@@ -1,0 +1,10 @@
+title: Test and Analyze
+---
+text:
+
+Mocha, chai, sinon, zombie
+How to create new tests/automatically created for new classes
+Specs/unit tests
+Integration tests
+Coverage report
+WIP: jsint and complexity check

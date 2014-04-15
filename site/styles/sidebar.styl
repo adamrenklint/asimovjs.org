@@ -1,19 +1,22 @@
 .sidebar
-  height: 100%
   position: fixed
+  box-sizing:border-box
   width: 290px
   background: #eaeaea
-  top: 0
+  top: 90px
   left: 0
-  overflow: scroll
+  bottom:0
+  overflow: auto
   z-index: 1
+  padding:10px 20px
 
   .sidebar-container
-    margin: 130px 0 0 30px
 
     li
       font-size: 20px
       font-weight: 300
-      margin: 0 0 20px 0
-      display: block
+      padding: 10px 0
 
+      &.active
+        a
+          color: $accent

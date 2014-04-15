@@ -1,3 +1,4 @@
+{{style "home"}}
 {{import "header"}}
 
 <div class="wrapper center">
@@ -10,14 +11,21 @@
     <div class="terminalContent">
       <p>$ npm install -g asimov.js</p>
       <p>$ ajs create myAwesomeProject</p>
-      <p>$ ajs start</p>
+      <p>$ ajs start --open</p>
     </div>
   </div>
-  {{import "calltoaction"}}
+  <div class="callToActions">
+    <a href="/blog" class="button outline">Blog</a>
+    <a href="/docs/getting-started" class="button">Get Started</a>
+  </div>
 </div>
 <div class="tweet">
   <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.asimovjs.org" data-related="adamrenklint" data-hashtags="asimovjs">Tweet</a>
   <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+</div>
+
+<div class="footer center">
+  Made by {{link "http://adamrenklint.com" "Adam Renklint"}}, Berlin 2014
 </div>
 
 {{import "footer"}}

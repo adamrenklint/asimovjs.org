@@ -1,0 +1,79 @@
+title: Adding a custom Command
+---
+text:
+
+To add a new command to the <code>ajs</code> command line interface, simply create a class that extends Command in <code>/lib/commands</code>.
+
+In this example, we'll be creating a simple command that counts the lines of code in the <code>/lib</code> folder.
+
+```
+$ ajs extend Command LineCount
+> Created new subclass of Command @ /lib/commands/LineCount.js
+> Created new test for LineCount @ /tests/commands/LineCount.test.js
+```
+
+Now open up <code>/lib/commands/LineCount.js</code> in your text editor. It should look something like this:
+
+```
+var Command = require('asimov.js').Command;
+var _super = Command.prototype;
+
+module.exports = Command.extend({
+  'initialize': function () {
+    var self = this;
+    _super.initialize.apply(self, arguments);
+  }
+});
+```
+
+At the end of the initializer, we then add this block to setup the variables we'll be needing later.
+
+Note that the filesystem object we're using in this example is a synchronous fs wrapper that asimov.js uses internally, and exposes for developers to use. You can just as well use vanilla fs, sync or async.
+
+```
+var started = new Date();
+var filesystem = self.filesystem;
+var startPath = process.cwd() + '/lib';
+self.count = 0;
+```
+
+Next, we need to write a method that recursively walks the folders and adds up the number of lines of each javascript file.
+
+```
+'countLines': function (path) {
+
+  var self = this;
+  var filesystem = self.filesystem;
+
+  if (filesystem.isDirectory(path)) {
+    filesystem.readDirectory(path, self.countLines);
+  }
+  else if (filesystem.hasFileExtension(path, 'js')) {
+    var lines = filesystem.readFile(path).toString().split('\n');
+    self.count += lines.length;
+  }
+}
+```
+
+To set it all off, we walk the start path and execute the counter method we just added, at the end of the initializer.
+
+```
+filesystem.readDirectory(startPath, self.countLines);
+```
+
+Finally, we log the result, using the built-in logger, again at the end of the initializer.
+
+```
+self.logger.since(self.namespace, 'Counted a total of ' + self.count  + ' line(s)', started);
+```
+
+This logger method takes a namespace, which defaults to "asimov", a message, and a date which is used to display the duration of the task.
+
+Okey, we're all set. Let's give it a test run. Remember that the CLI command is all lowercase, regardless of what we name the class.
+
+```
+$ ajs linecount
+> Counted a total of 34 line(s) +0.002s
+```
+
+Great, it works! Now go on to command the universe. And if you end up making something that might be useful to others, [submit a pull request](https://github.com/adamrenklint/asimov.js).

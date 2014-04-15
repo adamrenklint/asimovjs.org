@@ -1,0 +1,7 @@
+title: Commands
+---
+text:
+
+At the heart of asimov.js we have <code>ajs</code>, a command line interface that allows you to create projects, manage pages, run tests and much more, from your terminal.
+
+Following the base principle of asimov.js, all default commands are built as plugins, and developers can easily add custom commands, or even overload existing ones.

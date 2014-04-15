@@ -1,6 +1,36 @@
-{{import "header"}}
+{{style "docs"}}
 
-  <h1 class="logo">{{headline}}</h1>
-  <div class="content">{{text}}</div>
+{{import "header"}}
+{{import "menu"}}
+{{import "sidebar"}}
+
+<div class="docs container">
+  <h1>{{title}}</h2>
+  {{text}}
+
+  {{#unless page.hidechildren}}
+    {{#if page.hasChildren}}
+      <!-- <h2>Read more about {{page.childheadline}}</h2> -->
+      <ul class="docs-children">
+        {{#children}}
+          <li>
+            <h2>
+              {{#unless this.nolink}}
+                {{link this.url this.title}}
+              {{/unless}}
+              {{#if this.nolink}}
+                {{this.title}}
+              {{/if}}
+            </h2>
+            <!-- {{#if this.summary}}
+              {{this.summary}} {{#unless this.nolink}}{{link this.url "Read more..."}}{{/unless}}
+            {{/if}} -->
+          </li>
+        {{/children}}
+      </ul>
+    {{/if}}
+  {{/unless}}
+
+</div>
 
 {{import "footer"}}

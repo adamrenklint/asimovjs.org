@@ -31,7 +31,7 @@ body
   font-family: 'Open Sans', sans-serif
   color: $dark
   font-size: 16px
-  line-height: @font-size + 120%
+  line-height: 1.8em
   margin: 0 auto
 
 h1
@@ -80,18 +80,42 @@ p
 // CODE
 
 pre
-  padding: 6px 16px
-  background: rgba($accent,0.05)
-  font-family: 'Source Code Pro'
-  font-size: 1em
+  padding: 10px 16px
   margin: 10px 0 30px
   border-radius: 4px
+
+pre
+pre > code
+  border:none
+  font-size: 1em
+
+pre > code
+  background: none
+
+pre
+code
+  font-family: 'Source Code Pro'
   color: $accent
+  background: rgba($accent,0.05)
   border: 1px solid $accent
-  opacity: 0.8
+  opacity: 0.9
 
   &:hover
     opacity: 1
+
+code
+  font-size: 0.85em
+  border-radius: 3px
+  margin: 0 2px
+  white-space: pre-wrap
+  margin: 0
+  // border: 1px solid #ddd
+  // background-color: #f8f8f8
+  // border-radius: 3px
+  display: inline-block
+  line-height: 1.3
+  padding: 0 3px
+
 
 // BUTTONS
 
@@ -117,3 +141,22 @@ pre
     &:hover
       color: white
       background-color: $accent
+
+h1
+h3
+  color $accent
+  a
+    color $accent
+
+h1
+  margin-bottom: 20px
+  font-size 50px
+  font-weight: 800
+  line-height: 1.2
+
+h2
+  line-height: 1.2
+  margin-bottom: 10px
+
+h3
+  margin-bottom: 8px
