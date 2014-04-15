@@ -1,6 +1,6 @@
 {
   "name": "asimovjs.org",
-  "version": "0.2.19",
+  "version": "0.2.20",
   "homepage": "http://asimovjs.org",
   "description": "Website and documentation for asimov.js",
   "author": "Adam Renklint <adam@renklint.com> (http://adamrenklint.com)",
@@ -21,8 +21,8 @@
     "npm": "~1.1.60"
   },
   "dependencies": {
-    "asimov.js": "0.17.5-beta1",
-    "nib": "^1.0.2"
+    "asimov.js": "0.17.5",
+    "nib": "1.0.2"
   },
   "scripts": {
     "postinstall": "node main.js --preinstall"

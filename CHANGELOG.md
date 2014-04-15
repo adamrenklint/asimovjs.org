@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.2.20
+
+  - **Released Tuesday April 15th, 2014 @ 11.55pm**
+  - Upgraded to asimov.js 0.17.5, which provides workaround for Heroku app boot timeout
+
 ## 0.2.19
 
   - **Released Tuesday April 15th, 2014 @ 9.45am**
