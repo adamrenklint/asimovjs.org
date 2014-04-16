@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.2.21
+
+  - **Released Wednesday April 16th, 2014 @ 11.10pm**
+  - Upgraded to asimov.js 0.17.6, with improved lazy install
+
 ## 0.2.20
 
   - **Released Tuesday April 15th, 2014 @ 11.55pm**
