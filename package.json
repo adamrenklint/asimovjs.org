@@ -22,5 +22,8 @@
   },
   "dependencies": {
     "asimov.js": "0.17.4"
+  },
+  "scripts": {
+    "postinstall": "node main.js --preinstall"
   }
 }

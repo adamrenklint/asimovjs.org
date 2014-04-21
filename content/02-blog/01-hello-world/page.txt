@@ -4,15 +4,19 @@ text:
 
 First post, a lot to cover. Welcome! I'm Adam.
 
-The past months I've been working on a small project called asimov.js, a tool to help build websites and apps, using javascript and textfiles.
+The past months I've been working on a small project called asimov.js, a tool to help build websites and apps, using javascript and textfiles. It features a simple and expressive syntax for creating pages, simple folder structures for urls and sorting, a fast live-reloading development server and an even faster, clustered production server, built to handle massive amounts of requests.
+
+The core itself is a plugin loader, and each of the major events are base on plugins, which can be modified and extended by developers. Textfiles in the ```/content``` folder are parsed and compiled to static pages, served by a cluster of high-performance static server workers.
 
 ## Why
 
-First of all, I'm a javascript developer. In the last years, I've been working with [Kirby CMS](http://getkirby.com), a competent PHP framework for building websites. It's been a great tool, so I decided to apply the best parts of it to javascript and node.js.
+First of all, I'm a javascript developer. In the last years, I've sometimes been working with [Kirby CMS](http://getkirby.com), a competent PHP framework for building websites. It's been a great tool, so I decided to apply the best parts of it to javascript and node.js.
 
 There are lots of projects that aim to solve the same problem, in different or similar ways, on many different platforms. This is one take on it, and I think it makes a lot of sense.
 
 It's built to fit a certain need, based on what I've experienced in the past few years, building websites and apps for 6Wunderkinder. I hope to see it also evolve with the community that uses it, however big or small it may be.
+
+If you are in need of a performant javascript powered website and app server, give it a try!
 
 ## First things first
 
