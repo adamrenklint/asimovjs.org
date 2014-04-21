@@ -1,0 +1,17 @@
+{{import "header"}}
+{{import "menu"}}
+<div class="wrapper">
+  <div class="articles">
+    {{#children}}
+      <article class="article container">
+        <a href="{{this.url}}"><h1>{{title}}</h2></a>
+        {{text}}
+      </article>
+    {{/children}}
+  </div>
+  <div class="loadMore center">
+    <a class="button">Load More</a>
+  </div>
+</div>
+
+{{import "footer"}}
