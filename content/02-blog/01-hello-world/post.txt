@@ -2,4 +2,49 @@ title: Hello world
 ---
 text:
 
-Today is a big day... bla bla bla...
+First post, a lot to cover. Welcome! I'm Adam.
+
+The past months I've been working on a small project called asimov.js, a tool to help build websites and apps, using javascript and textfiles.
+
+## Why
+
+First of all, I'm a javascript developer. In the last years, I've been working with [Kirby CMS](http://getkirby.com), a competent PHP framework for building websites. It's been a great tool, so I decided to apply the best parts of it to javascript and node.js.
+
+There are lots of projects that aim to solve the same problem, in different or similar ways, on many different platforms. This is one take on it, and I think it makes a lot of sense.
+
+It's built to fit a certain need, based on what I've experienced in the past few years, building websites and apps for 6Wunderkinder. I hope to see it also evolve with the community that uses it, however big or small it may be.
+
+## First things first
+
+Assuming you already have [node.js](http://nodejs.org/) and [npm](https://www.npmjs.org/) installed, you need the command line interface.
+
+```
+$ npm install -g asimov.js
+```
+
+This gives you a exectable called ```ajs```, which let's you create new projects and pages, run tests and start your project. So let's create a blank project.
+
+```
+$ ajs create myAwesomeProject
+```
+
+This creates a new project from a [template](https://github.com/adamrenklint/asimovjs-template-project). Let's have a look.
+
+```
+$ ajs start --open
+```
+
+## What is content
+
+## Extendability - everything is a plugin
+
+links to initializers docs, middleware. page:pre:render, page:post:render
+ajs is plugins, link to git repo lib/initliazers lib/middleware
+
+## Documentation
+
+## Roadmap
+
+- Use a Github url for different templates with ```ajs create```
+
+## Contributions
