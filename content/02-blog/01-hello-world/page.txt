@@ -8,7 +8,7 @@ The past months I've been working on a small project called asimov.js, a tool to
 
 The core itself is a plugin loader, and each of the major events are base on plugins, which can be modified and extended by developers. Textfiles in the ```/content``` folder are parsed and compiled to static pages, served by a cluster of high-performance static server workers.
 
-## Why
+## Background?
 
 First of all, I'm a javascript developer. In the last years, I've sometimes been working with [Kirby CMS](http://getkirby.com), a competent PHP framework for building websites. It's been a great tool, so I decided to apply the best parts of it to javascript and node.js.
 
@@ -38,17 +38,20 @@ This creates a new project from a [template](https://github.com/adamrenklint/asi
 $ ajs start --open
 ```
 
-## What is content
-
-## Extendability - everything is a plugin
-
-links to initializers docs, middleware. page:pre:render, page:post:render
-ajs is plugins, link to git repo lib/initliazers lib/middleware
-
 ## Documentation
 
-## Roadmap
+A good open source project lives and dies partly with it's documentation, and I hope to keep a high standard here. To get you started, read more about how to [use the command line interface](/docs/commands) or how [pages](/docs/pages-and-urls), [templates and helpers](/docs/templates-and-helpers) work.
 
-- Use a Github url for different templates with ```ajs create```
+Guides and tutorials, demos of different use cases and other useful bits of knowledge will be delivered here, in the [blog](/blog) and the [documentation](/docs).
 
-## Contributions
+## Current version
+
+The stable version at this moment is ```0.18.0```, which is also used to serve this page. If you're into details, check out the [changelog](/docs/changelog).
+
+## Roadmap, issues, contribute
+
+The core parts of asimov.js are done, now I will focus on extending the functionality with plugins. Features and bugs are tracked in [Github Issues](https://github.com/adamrenklint/asimov.js/issues), and I'm more than happy to receive [pull requests](https://github.com/adamrenklint/asimov.js/pulls).
+
+Please reach out with feedback, ideas or constructive criticism.
+
+Thank you for your time.
