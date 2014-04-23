@@ -16,17 +16,14 @@ Folders with numbers define **visible** pages, folders without numbers are **hid
 
 ## Visible Pages
 
-Visible in menus and page collections
-Number is used for ordering
-Number is stripped from url
+Visible pages appear by default in all collections of pages, unlike hidden pages. The number is used for sorting the pages, and is stripped off the public url.
+
+For example, the second blog post above would be accessed with ```example.com/blog/another-post```.
 
 ## Hidden Pages
 
-Not visible in menus
-Only visible in page collections is explicitly set to show hidden
-Can still link to them, public urls
+The contact page above is an example of a hidden page, which is still rendered and publicly available, but not present by default in collections of pages. These pages will not appear when using template helpers like pages, children and menu, but you can still link to them to make them accessible by their public urls.
 
 ## Ignored Pages
 
-Ignored when crawling filesystem, not rendered
-Secure way of saving drafts
+For pages that are in a draft state, simply prepend the folder name with an underscore, and it will be ignored when scanning the content folder for pages.
