@@ -18,3 +18,5 @@ In this page file and the template used to render it, you have access to the def
 text: Hallo, Ich bin Adam. Ich spreche auch english: %cl%super.text%cr%
 %divider%
 ```
+
+The default project language, which is english unless you configure it otherwise, never uses the language code in urls.

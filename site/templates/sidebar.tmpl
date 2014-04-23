@@ -5,6 +5,16 @@
       <li {{#active this.url}}class="active"{{/active}}>
         {{link this.url this.title}}
 
+        {{#if this.hasChildren}}
+          <ul>
+            {{#children this.url}}
+              <li {{#active this.url}}class="active"{{/active}}>
+                {{link this.url this.title}}
+              </li>
+            {{/children}}
+          </ul>
+        {{/if}}
+
         <!-- Not possible to do until context is seamlessly passed to inner templates
         {{#activeAncestor page.url}}
         {{/activeAncestor}} -->
