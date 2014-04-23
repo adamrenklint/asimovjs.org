@@ -1,0 +1,66 @@
+title: Hello world
+---
+text:
+
+First post, a lot to cover. Welcome! I'm [Adam](http://adamrenklint.com).
+
+The past months I've been working on a small project called **asimov.js**, a tool to help build websites and apps, using javascript and textfiles.
+
+It features a simple and expressive syntax for creating content and layouts, simple folder structures for urls and sorting, a fast live-reloading development server and an even faster, clustered production server, built to handle massive amounts of requests.
+
+The core itself is a plugin loader, and each of the major events are base on plugins, which can be modified and extended by developers. Textfiles in the ```/content``` folder are parsed and compiled to static pages, served by a cluster of high-performance static server workers.
+
+## Background?
+
+First of all, I'm a javascript developer. In the last years building websites and apps for [6Wunderkinder](http://www.6wunderkinder.com), I've sometimes been working with [Kirby CMS](http://getkirby.com), a simple but competent PHP framework. It's been a great tool, so I decided to apply the best parts of it to javascript and node.js.
+
+There are lots of projects that aim to solve the same problem, in different or similar ways, on many different platforms. This is one take on it, and I think it makes a lot of sense.
+
+It's built to fit a certain need, based on what I've experienced in the past few years, building websites and apps for 6Wunderkinder. I hope to see it also evolve with the community that uses it, however big or small it may be.
+
+If you are in need of a performant javascript powered website and app server, give it a try!
+
+## First things first
+
+Assuming you already have [node.js](http://nodejs.org/) and [npm](https://www.npmjs.org/) installed, you need the command line interface.
+
+```
+$ npm install -g asimov.js
+```
+
+This gives you a exectable called ```ajs```, which let's you create new projects and pages, run tests and start your project. So let's create a blank project.
+
+```
+$ ajs create myAwesomeProject
+```
+
+This creates a new project from a [template](https://github.com/adamrenklint/asimovjs-template-project). Let's have a look.
+
+```
+$ cd myAwesomeProject
+$ ajs --open
+```
+
+This will start your project, compile all the pages and open **http://127.0.0.1:3003** in your default browser.
+
+## How to use it
+
+To learn more about what the CLI can do for you, check out {{link "/docs/commands" "Commands"}}.
+
+Or if you want to dive right into creating creating content and designing pages, start with {{link "/docs/pages-and-urls" "Pages and Urls"}} and follow with {{link "/docs/templates-and-helper" "Templates and Helpers"}}.
+
+Guides and tutorials, demos of different use cases and other useful bits of knowledge will be delivered here, in the [blog](/blog) and the [documentation](/docs).
+
+## Open source
+
+The project is [MIT licensed](https://github.com/adamrenklint/asimov.js/blob/master/LICENSE) and hosted on [Github](https://github.com/adamrenklint/asimov.js). Bugs and feature requests can be posted on [Github Issues](https://github.com/adamrenklint/asimov.js/issues), and pull requests are of course more than welcome.
+
+## What's next
+
+In the next few releases you will get a powerful plugin and theme engine, and plugins to support asimov.js projects running in production. And **more and better docs**.
+
+Please reach out with feedback, ideas or constructive criticism.
+
+Thank you for your time.
+
+[Adam Renklint](http://adamrenklint.com)

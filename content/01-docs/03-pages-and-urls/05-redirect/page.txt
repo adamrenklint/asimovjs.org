@@ -1,5 +1,11 @@
-title: Making a page redirect
+title: Redirect
 ---
 text:
 
-asdasda
+To make a page redirect to another url, internal or external to your project, add a content section called ```redirect``` and define the url.
+
+```
+%divider%
+redirect: /another-page
+%divider%
+```

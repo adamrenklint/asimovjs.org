@@ -1,0 +1,30 @@
+title: Importing data from other pages
+---
+text:
+
+## This is the wrong way of doing it... just make a page helper that returns the page and it's values...
+
+
+
+
+
+
+You can import data from any other page in your content folder, and re-use their values. Simply define a parent and access its attributes with the ```super``` variable.
+
+```
+%divider%
+inherits: /blog/hello-world
+%divider%
+text: Once I said %cl%super.text%cr%
+%divider%
+```
+
+If the parent page defines nested data structures with YAML, you can get those too.
+
+```
+%divider%
+inherits: /contact
+%divider%
+text: We're located in %cl%super.adress.city%cr%
+%divider%
+```

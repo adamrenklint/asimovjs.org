@@ -2,4 +2,21 @@ title: Multiple languages
 ---
 text:
 
-asdasd
+Multi-language support is built right in. To define a localized version of a page, create a new textfile with the language code at the end.
+
+```
+$ ajs new page about-me page --lang de
+> Created new page @ /content/about-me/page.de.txt
+```
+
+This page will be accessible at ```example.com/de/about-me```.
+
+In this page file and the template used to render it, you have access to the default language version of the page, using the ```super``` variable.
+
+```
+%divider%
+text: Hallo, Ich bin Adam. Ich spreche auch english: %cl%super.text%cr%
+%divider%
+```
+
+The default project language, which is english unless you configure it otherwise, never uses the language code in urls.

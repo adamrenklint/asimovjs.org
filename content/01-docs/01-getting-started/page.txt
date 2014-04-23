@@ -3,7 +3,7 @@ title: Getting Started
 text:
 
 So you’ve looked around, kicked the tires and you’re now ready for a test run?
-Great, installing asimov.js and creating your new project only takes a few seconds.
+Great, installing asimov.js and creating your first project only takes a few seconds.
 
 These instructions will install asimov.js, copy the default project template and give you a great starting point for your next website or app.
 

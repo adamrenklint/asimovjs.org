@@ -6,27 +6,27 @@ text:
 
 Pages are simple textfiles, saved in the <code>/content</code> folder. Their urls are defined by the folder structure, and the name of the textfile defines what template is used to render it.
 
-To create content, you use <a href="{{page.url}}/adding-content">expressive syntax</a>
-
 ## Format of a page textfile
-
-A page textfile consists of **content sections**, divided by three dashes, defining a key and some sort of value.
 
 ```
 title: My awesome page!
 %divider%
-tags: epic, legendary
+tags: [epic, legendary]
 %divider%
 text: Hello world!
 ```
 
+A page textfile consists of **content sections**, divided by three dashes, defining a key and some sort of value.
+
 ### Plain text
 
-The *title* section above is an example of a plain text content section, which will be available as a string in templates.
-
-### List (array of strings)
-
-The *tag* section will be parsed as an array of strings.
+```
+%divider%
+title: My awesome page!
+%divider%
+text: I am the main content!
+%divider%
+```
 
 ### Markdown
 
@@ -34,13 +34,25 @@ Pretty obvious, this one. [The one and only Markdown](https://daringfireball.net
 
 ### Handlebars
 
-Using the Handlebars syntax, you can include another value from the page textfile.
+[Templates](/docs/templates-and-helpers) are based on Handlebars, but you can also use its syntax directly in page textfiles. To learn more about what variables are available, jump to [Objects and Variables](/docs/objects-and-variables).
 
 ```
-title: Important title
 %divider%
-text: I repeat, it is a very %cl%title%cr%
+title: My awesome page!
+%divider%
+text: I said, this is %cl%page.title%cr%
+%divider%
 ```
+
+### List (array of strings)
+
+```
+%divider%
+tags: [epic, legendary]
+%divider%
+```
+
+The *tag* section will be parsed to an array of strings.
 
 ### YAML
 
@@ -60,3 +72,14 @@ text: Visit the %cl%link links.adamrenklint.url links.adamrenklint.type%cr%
 ### HTML
 
 Yeah, you read it. Good ol′ HTML also works in page text files, to allow for truly flexible, page specific designs and layouts.
+
+## Creating a new page
+
+You can use the [```ajs new page [url] [template]```](/docs/commands/default-commands) command to create a new page. In this example, we'll create a page at ```/content/about-me/page.txt```, that uses the ```/site/templates/page.tmpl``` to render.
+
+```
+$ ajs new page about-me page
+> Created new page @ /content/about-me/page.txt
+```
+
+You can of course also just create folders and textfiles from your favourite texteditor, whatever floats your boat.
