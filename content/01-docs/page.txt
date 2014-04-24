@@ -1,17 +1,27 @@
-title: Documentation for version {{ajs.version}}
+title: asimov.js {{ajs.version}}
 ---
 hidechildren: true
 ---
 text:
 
-Welcome, young padawan. Here you will learn the basics of what asimov.js is and does, how to interact with all the moving parts, and how to bend and extend the lifecycle events of your app for more advanced use cases.
+[asimov.js](https://www.npmjs.org/package/asimov.js) is a tool to help build websites and apps, using javascript and textfiles.
 
-If you are totally new to asimov.js, start with {{link "/docs/getting-started" "the basics"}}.
+It features a simple and expressive syntax for creating content and layouts, simple folder structures for urls and sorting, a fast live-reloading development server and an even faster, clustered production server, built to handle massive amounts of requests.
+
+## Learn how it works
+
+If you are totally new to asimov.js, start with {{link "/docs/getting-started" "the basics"}} and the [Hello World](/blog/hello-world) blog post.
+
+To learn more about what the CLI can do for you, check out {{link "/docs/commands" "Commands"}}.
+
+Or if you want to dive right into creating creating content and designing pages, start with {{link "/docs/pages-and-urls" "Pages and Urls"}} and follow with {{link "/docs/templates-and-helper" "Templates and Helpers"}}.
 
 If you want to keep up to date with all the new stuff in every version of asimov.js, keep checking out the {{link "/docs/changelog" "changelog"}} and {{link "/blog" "blog"}}.
 
+## Open source
+
+The project is [MIT licensed](https://github.com/adamrenklint/asimov.js/blob/master/LICENSE) and hosted on [Github](https://github.com/adamrenklint/asimov.js). Bugs and feature requests can be posted on [Github Issues](https://github.com/adamrenklint/asimov.js/issues), and pull requests are of course more than welcome.
+
 Every reliable tool and successful open source project needs good, clear documentation. If you have any feedback or critique, please {{email "adam@renklint.com" title="reach out"}}.
 
-If you are a developer and looking to contribute, {{link "https://github.com/adamrenklint/asimov.js" "fork the repo"}} and submit a pull request.
-
-asimov.js is a {{link "https://github.com/adamrenklint/asimov.js/blob/master/LICENSE" "MIT licensed"}} open source project from {{link "http://adamrenklint.com" "Adam Renklint"}}, created in Berlin in the spring of 2014.
+Made by {{link "http://adamrenklint.com" "Adam Renklint"}}, Berlin 2014.

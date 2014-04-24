@@ -4,7 +4,7 @@ text:
 
 First post, a lot to cover. Welcome! I'm [Adam](http://adamrenklint.com).
 
-The past months I've been working on a small project called **asimov.js**, a tool to help build websites and apps, using javascript and textfiles.
+The past few months I've been working on a small project called [asimov.js](https://www.npmjs.org/package/asimov.js), a tool to help build websites and apps, using javascript and textfiles.
 
 It features a simple and expressive syntax for creating content and layouts, simple folder structures for urls and sorting, a fast live-reloading development server and an even faster, clustered production server, built to handle massive amounts of requests.
 
@@ -12,11 +12,11 @@ The core itself is a plugin loader, and each of the major events are base on plu
 
 ## Background?
 
-First of all, I'm a javascript developer. In the last years building websites and apps for [6Wunderkinder](http://www.6wunderkinder.com), I've sometimes been working with [Kirby CMS](http://getkirby.com), a simple but competent PHP framework. It's been a great tool, so I decided to apply the best parts of it to javascript and node.js.
+First of all, I'm a javascript developer. In the last years, I've sometimes been working with [Kirby CMS](http://getkirby.com), a simple and competent PHP framework for building websites. It's been a great tool, so I decided to apply the best parts of it to javascript and node.js.
 
 There are lots of projects that aim to solve the same problem, in different or similar ways, on many different platforms. This is one take on it, and I think it makes a lot of sense.
 
-It's built to fit a certain need, based on what I've experienced in the past few years, building websites and apps for 6Wunderkinder. I hope to see it also evolve with the community that uses it, however big or small it may be.
+It's built to fit a certain need, based on what I've experienced in the past few years, building websites and apps like [Wunderlist](http://www.wunderlist.com) for [6Wunderkinder](http://www.6wunderkinder.com). I hope to see it also evolve with the community that uses it, however big or small it may be.
 
 If you are in need of a performant javascript powered website and app server, give it a try!
 
@@ -43,13 +43,15 @@ $ ajs --open
 
 This will start your project, compile all the pages and open **http://127.0.0.1:3003** in your default browser.
 
-## How to use it
+## Learn how it works
+
+If you are totally new to asimov.js, start with {{link "/docs/getting-started" "the basics"}} and the [Hello World](/blog/hello-world) blog post.
 
 To learn more about what the CLI can do for you, check out {{link "/docs/commands" "Commands"}}.
 
 Or if you want to dive right into creating creating content and designing pages, start with {{link "/docs/pages-and-urls" "Pages and Urls"}} and follow with {{link "/docs/templates-and-helper" "Templates and Helpers"}}.
 
-Guides and tutorials, demos of different use cases and other useful bits of knowledge will be delivered here, in the [blog](/blog) and the [documentation](/docs).
+If you want to keep up to date with all the new stuff in every version of asimov.js, keep checking out the {{link "/docs/changelog" "changelog"}} and {{link "/blog" "blog"}}.
 
 ## Open source
 
@@ -62,5 +64,3 @@ In the next few releases you will get a powerful plugin and theme engine, and pl
 Please reach out with feedback, ideas or constructive criticism.
 
 Thank you for your time.
-
-[Adam Renklint](http://adamrenklint.com)

@@ -5,6 +5,7 @@
       <li {{#active this.url}}class="active"{{/active}}>
         {{link this.url this.title}}
 
+        <!-- This is also not possible, because for some pages, there are no children at all rendered here. must be because of the rendering order. how to solve that?
         {{#if this.hasChildren}}
           <ul>
             {{#children this.url}}
@@ -13,7 +14,7 @@
               </li>
             {{/children}}
           </ul>
-        {{/if}}
+        {{/if}} -->
 
         <!-- Not possible to do until context is seamlessly passed to inner templates
         {{#activeAncestor page.url}}
