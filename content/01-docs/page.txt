@@ -4,7 +4,7 @@ hidechildren: true
 ---
 text:
 
-[asimov.js](https://www.npmjs.org/package/asimov.js) is a tool to help build websites and apps, using javascript and textfiles.
+[asimov.js](https://www.npmjs.org/package/asimov.js) is a tool for building **websites and apps**, using **javascript and textfiles**.
 
 It features a simple and expressive syntax for creating content and layouts, simple folder structures for urls and sorting, a fast live-reloading development server and an even faster, clustered production server, built to handle massive amounts of requests.
 

@@ -2,11 +2,13 @@ title: Templates and Helpers
 ---
 text:
 
+Templates are
+
 How to write templates
 How to use helpers
 Importing other templates, passing data
 Available helpers
-How to add custom helpers
+Adding a custom helper
 
 What data and utils are available inside helpers
 Variables available here and in templates (page, pages, site)
