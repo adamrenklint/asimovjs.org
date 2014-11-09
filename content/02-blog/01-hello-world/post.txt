@@ -8,7 +8,7 @@ The past few months I've been working on a small project called [asimov.js](http
 
 It features a simple and expressive syntax for creating content and layouts, simple folder structures for urls and sorting, a fast live-reloading development server and an even faster, clustered production server, built to handle massive amounts of requests.
 
-The core itself is a plugin loader, and each of the major events are base on plugins, which can be modified and extended by developers. Textfiles in the ```/content``` folder are parsed and compiled to static pages, served by a cluster of high-performance static server workers.
+Textfiles in the ```/content``` folder are parsed and compiled to static pages, served by a cluster of high-performance static server workers.
 
 ## Background?
 
@@ -45,7 +45,7 @@ This will start your project, compile all the pages and open **http://127.0.0.1:
 
 ## Learn how it works
 
-If you are totally new to asimov.js, start with {{link "/docs/getting-started" "the basics"}} and the [Hello World](/blog/hello-world) blog post.
+If you are totally new to asimov.js, start with {{link "/docs/getting-started" "the basics"}}.
 
 To learn more about what the CLI can do for you, check out {{link "/docs/commands" "Commands"}}.
 

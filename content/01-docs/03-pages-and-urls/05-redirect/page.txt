@@ -2,10 +2,13 @@ title: Redirect
 ---
 text:
 
-To make a page redirect to another url, internal or external to your project, add a content section called ```redirect``` and define the url.
+To make a page redirect to another **absolute url**, internal or external to your domain, simply add a content section called ```redirect``` and define the url.
 
 ```
 %divider%
 redirect: /another-page
 %divider%
 ```
+
+
+add another example for external urls

@@ -21,7 +21,7 @@
     "npm": "~1.1.60"
   },
   "dependencies": {
-    "asimov.js": "0.17.7"
+    "asimov.js": "0.17.8"
   },
   "scripts": {
     "postinstall": "node main.js --preinstall"
