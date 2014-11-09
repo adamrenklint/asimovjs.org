@@ -1,6 +1,6 @@
 {
   "name": "asimovjs.org",
-  "version": "0.2.21",
+  "version": "1.0.0",
   "homepage": "http://asimovjs.org",
   "description": "Website and documentation for asimov.js",
   "author": "Adam Renklint <adam@renklint.com> (http://adamrenklint.com)",
@@ -8,7 +8,7 @@
     "Timothy Achumba <timothy@achumba.com> (http://awsme.me)",
     "Marvin Labod <marvin@6wunderkinder.com> (http://www.inlovewithcss.com)"
   ],
-  "main": "main.js",
+  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git://github.com/adamrenklint/asimov-website.git"
@@ -16,15 +16,9 @@
   "bugs": {
     "url": "https://github.com/adamrenklint/asimov-website/issues"
   },
-  "engines": {
-    "node": "~0.10.0",
-    "npm": "~1.1.60"
-  },
   "dependencies": {
-    "asimov.js": "0.17.6",
+    "asimov": "^1.0.0",
+    "asimov-static": "^1.1.0",
     "nib": "1.0.2"
-  },
-  "scripts": {
-    "postinstall": "node main.js --preinstall"
   }
 }

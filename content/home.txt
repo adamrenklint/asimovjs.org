@@ -2,5 +2,5 @@ title: asimov.js - a better way to build awesome websites and apps, with javascr
 ---
 text:
 
-A better way to build awesome websites
-and apps, with javascript and textfiles.
+a better toolkit for building
+awesome websites and apps
